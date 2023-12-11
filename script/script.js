@@ -167,7 +167,7 @@ containerDoctorCount.addEventListener("mouseenter", function () {
   d[l]
     ? console.warn(p + " only loads once. Ignoring:", g)
     : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-})({ key: "AIzaSyD7dJQe310hYqb1SXhwttNhjsKay8cDkao", v: "beta" });
+})({ key: "<input-key>", v: "beta" });
 
 // Initialize and add the map
 let map;
