@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Description" content="...">
+    <title>JD Robinson | MD </title>
+
+    <!-- Bootstrap dependency-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,500;1,600&family=Nunito:wght@500;1000&family=Righteous&family=Saira:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f3598bd12.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <!--Google Maps-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/style_sheets/style.css" />
+    <script type="module" src="./index.js"></script>
+
+    <!-- My CSS style Sheet-->
+    <link rel="stylesheet" href="/style_sheets/style.css">
+
+</head>
+
+<body>
+
+    <header class="sticky-top">
+
+        <!-- First container with Company logo and navbar buttons -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col">
+                    <a class="navbar-brand" href="#">SAN MARCOS ORTHOPEDICS</a>
+                </div>
+
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+                            style="border-top: solid 2px; border-bottom: solid 2px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Surgeons
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Dr. Crum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. McDonnell</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. Mundanthenum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/jd-robinson.html">Dr. Robinson</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. Saini</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Joint Replacement</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Sports Medicine</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Foot and Ankle</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Hand</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Fracture Care</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Patient Info</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">First Visit Guide</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Post Op Instructions</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Insurance Information</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Patient Medical Records Request</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Online Bill Pay</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Appointments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">General Appointment</a></li>
+                                    <hr class="dropdown-divider">
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+        <div class="row" style="background-color: #26403b">
+            <div class="col">
+                <a href="#">
+                    <span class="badge rounded-pill text-bg-light"
+                        style="margin-left: 10px; margin-top: 12px; width: 12rem; font-size: medium;">Online
+                        Bill Pay
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="header_phone">
+                        <i class="fas fa-phone"></i>
+                        (512)-878-4203
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="col d-flex justify-content-end">
+                <form class="d-flex p-2" style="width: 375px;" action="" role="search">
+                    <input id="searchField" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" onclick="disableScroll()">
+                    <button id="searchBtn" class="btn btn-outline-light" type="submit">SEARCH</button>
+
+                </form>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- bread crumbs -->
+
+    <div style="--bs-breadcrumb-divider: '>'; margin-top: 10px; margin-left: 10px;" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JD Robinson</li>
+        </ol>
+    </div>
+
+    <!-- Container for top background image -->
+    <section>
+
+        <div class="container-fluid d-flex justify-content-center">
+
+            <div class="row surgeon_style">
+                <div class="col" style="display: flex; align-items: center;">
+                    <h2 style="color: white; ">Physicians</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container-fluid"
+        style="border: dashed red; color: white; background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 255, 229));">
+        <h2 style="margin-left: 275px; margin-top: 30px;"> John D. Robinson JR. MD</h2>
+        <p style="margin-left: 275px;">
+            Orthopedic Surgery
+        </p>
+    </div>
+
+    </section>
+
+
+    <section>
+        <div class="container-md">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col" style="border: dashed darkgreen; ">
+                    <h5> Appointment Info </h5>
+                    <p>512-878-4203</p>
+                    <a href="mailto:smorthopedics@outlook.com">
+                        smorthopedics@outlook.com
+                    </a>
+
+                </div>
+
+                <div class="col dashed_lines">
+                    <h5> Areas of Focus:</h5>
+                    <p>Knee</p>
+                    <p>Shoulder Arthroscopy</p>
+
+
+                </div>
+
+                <div class="col dashed_lines">
+                    <h5> Location: </h5>
+                    <p>1310 Wonder World Drive, Suite 115,
+                        San Marcos, Texas 78666</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="container-lg">
+        <div class="row dashed_lines">
+            <div class=" col-sm-3 dashed_lines">
+                <img src="/doctor_headshot_images/jd_robinson_headshot.png" alt="medical doctor"
+                    style="border-radius: 10px; margin-left: 10px; margin-top: 40px;">
+
+
+            </div>
+
+
+
+            <div class="col bio_paragraph_container">
+                <h3 style="border:dashed darkslateblue;">Practice Overview</h3>
+                <p>John D. Robinson, MD is a fellowship
+                    trained Sports
+                    Medicine
+                    Orthopedic Surgeon specializing in
+                    advanced knee and
+                    shoulder arthroscopy as well as shoulder, robotic knee and anterior hip joint replacement.
+                <p>
+                    Completing his fellowship
+                    training with Tahoe Orthopedics and Mammoth Orthopedic Institute, he regularly treated complex
+                    mountain extremity
+                    injuries with an emphasis on the most innovative and minimally invasive techniques. His experience
+                    with cutting-edge
+                    procedures, such as ACL Repair, Bridge Enhanced ACL Restoration (BEAR), and shoulder arthroplasty
+                    using patient-specific
+                    computerized planning, provides a unique solution that preserves or restores native anatomy and
+                    function.
+                </p>
+                <p>
+                    He is currently involved with the US Men’s and Women’s Ski and Snowboard Teams and will be assisting
+                    Texas State
+                    University as a co-team Physician. By providing care to patients from all walks of life – from
+                    Olympic medalists to
+                    recreational athletes, he understands the importance of developing a treatment plan that is
+                    personalized for each
+                    patient’s unique goals.
+                </p>
+                <p>
+                    Dr. Robinson is married to his wife, Macie, who is a Pediatric Nurse Practitioner in Lockhart. They
+                    live in San Marcos
+                    and are passionate about living in and serving the surrounding communities. He is an avid
+                    outdoorsman that enjoys
+                    fly-fishing, archery, elk/deer hunting, skiing/snowboarding, football, basketball, pickleball, and
+                    golf.
+                </p>
+
+                <h4>Education</h4>
+
+
+                <p>Undergraduate: University of Arizona, Tucson, AZ</p>
+
+
+                <p>Medical: The University of Texas Medical Branch at Galveston</p>
+
+                <h4>Training</h4>
+
+
+                <p>Orthopedic Residency: John Peter Smith Health Network, Fort Worth, TX</p>
+
+                <p>Sports Medicine Fellowship: Lake Tahoe Sports Medicine Fellowship, South Lake Tahoe, CA</p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1310 Wonder World Drive, Suite 115, <br> San Marcos, Texas 78666</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>(512)878-4203</span>
+                                <h4>Fax</h4>
+                                <span>(512)878-4209</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>sanmarcosorthopedics@outlook.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#" style="color: black;">
+                                    <h2>SAN MARCOS ORTHOPEDICS</h2>
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Our experienced medical professionals put your healing needs first. We are proud to
+                                    provide a high quality level of
+                                    customer service, medical experience, and commitment to health and wellness to all
+                                    our patients. Our goal is to make you
+                                    feel better as quickly as possible.
+
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Surgeons</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Patient Info</a></li>
+                                <li><a href="#">Appointments</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <!-- <li><a href="#">Expert Team</a></li> -->
+                                <li><a href="#">Contact us</a></li>
+                                <!-- <li><a href="#">Latest News</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, San Marcos Orthopedics All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Script Files needed-->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+    <!--My Script File-->
+    <script defer src="/script/script.js"></script>
+
+</body>
+
+</html>

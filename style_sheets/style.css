@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------*/
+nav {
+  text-transform: uppercase;
+}
+
+.header_phone {
+  color: white;
+  margin-left: 10px;
+}
+
+/* Search Implementation modal window appears as user inputs seach criteria*/
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border: dashed red;
+}
+
+.hidden_all {
+  display: none;
+}
+
+.modal_custom {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+/* Keyframes */
+/*-------------------------------------*/
+/*Navigation Bar top right corner*/
+.textBold {
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.iconChangeStyle {
+  color: lightseagreen;
+  font-size: x-large;
+}
+
+.center_content {
+  display: flex;
+  justify-content: center;
+}
+
+/*Banner for carousel middle of page*/
+/*Drone footage */
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+/*Doctor count off*/
+.heading_primary {
+  display: flex;
+  align-items: center;
+  letter-spacing: 8px;
+}
+
+.counter {
+  color: white;
+}
+
+/* Container with doctors bios*/
+.headshot_box {
+  display: block;
+  border: solid 1px gray;
+  width: 350px;
+  height: 650px;
+  background-color: white;
+  box-shadow: 20px 20px 10px grey;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.hover-element {
+  transition: border-color 0.5s step-start;
+}
+
+.hover-element:hover {
+  border: 8px solid;
+  border-color: #1d201d;
+}
+
+/*Container with Social media above footer*/
+.accent_gradient {
+  background-image: linear-gradient(to left, rgb(230, 228, 228), #425661);
+  color: white;
+  font-size: 3rem;
+}
+
+/*container for map and dirctions*/
+/*google map*/
+/* Set the size of the div element that contains the map */
+#map {
+  /* The height is 400 pixels */
+  /* The width is the width of the web page */
+  height: 550px;
+  border-radius: 0.2rem;
+}
+
+.map_container_style {
+  background-color: #1d201d;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.banner_level {
+  z-index: 1;
+}
+
+/*******************************
+//Container for reviews section
+//styling starts here for container*/
+.review_contatiner_decoration {
+  background-image: url("/index_page_images/review_container_bg.png");
+}
+
+.banner_text {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.google_review_container {
+  height: 375px;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: scroll;
+  font-size: larger;
+}
+
+/*
+////////////////////////////////////////////////////
+//Footer Bar content////////////////////////////////*/
+footer {
+  color: white;
+  background-color: white;
+  height: 85vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding: 10px;
+}
+
+.white_it_out {
+  color: white;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #26403b;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: Black;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3b5998;
+}
+
+.footer-widget-heading h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #26403b;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #92b5b1;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #bcbbbb;
+  border: 1px solid grey;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #92b5b1;
+  padding: 13px 20px;
+  border: 1px solid #92b5b1;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #1d201d;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #26403b;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #26403b;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.surgeon_style {
+  background-image: url("/surgeon_bios_img/individual_surgeon_bio.png");
+  width: 75%;
+  height: 300px;
+  border: dashed blue;
+}
+
+.bio_paragraph_container {
+  border: dashed gold;
+  margin-top: 50px;
+}
+
+.bio_paragraph_container h3,
+h4 {
+  text-decoration: underline;
+}
+
+.bio_paragraph_container p {
+  width: 75%;
+  border: dashed red;
+  font-size: 0.95rem;
+}
+
+.dashed_lines {
+  border: dashed limegreen;
+}/*# sourceMappingURL=style.css.map */

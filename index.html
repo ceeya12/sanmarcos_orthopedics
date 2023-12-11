@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Input information for search engine small description-->
+    <meta name="Description" content="....">
+    <title>San Marcos | Orthopedics</title>
+
+    <!-- Bootstrap dependency-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,500;1,600&family=Nunito:wght@500;1000&family=Righteous&family=Saira:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- favicon generator information
+    <link rel="icon" href="/sanmarcos_orthopedics/index_page_images/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/sanmarcos_orthopedics/index_page_images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/sanmarcos_orthopedics/index_page_images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/sanmarcos_orthopedics/index_page_images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/sanmarcos_orthopedics/index_page_images/favicon_io/site.webmanifest">-->
+
+    <!-- Font Awesome & Icons
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />-->
+
+    <script src="https://kit.fontawesome.com/6f3598bd12.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <!--Google Maps-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/style_sheets/style.css" />
+    <script type="module" src="./index.js"></script>
+
+    <!-- fuse js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+
+    <!-- My CSS style Sheet-->
+    <link rel="stylesheet" href="/style_sheets/style.css">
+
+
+
+</head>
+
+<body>
+
+    <header class="sticky-top">
+
+        <!-- First container with Company logo and navbar buttons -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col">
+                    <a class="navbar-brand" href="#">SAN MARCOS ORTHOPEDICS</a>
+                </div>
+
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+                            style="border-top: solid 2px; border-bottom: solid 2px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Surgeons
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Dr. Crum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. McDonnell</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. Mundanthenum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/johndrobinson.html">Dr. Robinson</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. Saini</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Joint Replacement</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Sports Medicine</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Foot and Ankle</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Hand</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Fracture Care</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Patient Info</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">First Visit Guide</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Post Op Instructions</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Insurance Information</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Patient Medical Records Request</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Online Bill Pay</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Appointments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">General Appointment</a></li>
+                                    <hr class="dropdown-divider">
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+        <div class="row" style="background-color: #26403b">
+            <div class="col">
+                <a href="#">
+                    <span class="badge rounded-pill text-bg-light"
+                        style="margin-left: 10px; margin-top: 12px; width: 12rem; font-size: medium;">Online
+                        Bill Pay
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="header_phone">
+                        <i class="fas fa-phone"></i>
+                        (512)-878-4203
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="col d-flex justify-content-end">
+                <form id="search-form" class="d-flex p-2" style="width: 375px;" name="search" role="search">
+                    <input id="search" name="search" type="search" class="form-control me-2" placeholder="Search">
+                    <button id="searchBtn" class="btn btn-outline-light" type="submit">SEARCH</button>
+
+                </form>
+
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!--Container below navbar-->
+
+    <div class="container-fluid">
+
+        <div class="modal_custom hidden_all">
+            <button class="close-modal">&times;</button>
+            <h2>Search Results:</h2>
+            <div id="search-results" aria-label="search results">
+
+            </div>
+        </div>
+
+        <div class="overlay hidden_all"></div>
+
+
+
+        <!-- Bootstrap carousel image-->
+        <div class="row">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="img-fluid" autoplay loop muted>
+                            <!--size of video is 3840X1000-->
+                            <source src="./index_page_images/x_ray-2.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">CAPTION</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./index_page_images/carousel.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./index_page_images/x_ray_2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--container for meet our providers-->
+    <!--location below boot strap carousel-->
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <h2>
+                <span class="heading_primary">MEET OUR SURGEONS</span>
+            </h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+
+            <div class="col">
+                <div class="headshot_box hover-element">
+                    <div class="d-flex justify-content-center">
+                        <!--headshot size 283px X 425px-->
+                        <img style="margin-top: 5%; border-radius: 2%;"
+                            src="/doctor_headshot_images/mark_mcdonnell_headshot.png" alt="doctor headshot">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5> Dr. Mark McDonnell </h5>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <i>Speciality Here</i>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <i class="fa-solid"></i>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center" style="margin-top: 20%;">
+                        <button type="button" class="btn btn-secondary">VIEW BIO
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="headshot_box">
+                    <div class="d-flex justify-content-center">
+                        <img style="margin-top: 5%;" src="/doctor_headshot_images/joshua_crum_headshot.png"
+                            alt="doctor headshot">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="headshot_box">
+                    <div class="d-flex justify-content-center">
+                        <!--Dr. George Mundanthanam-->
+                        <img style="margin-top: 5%;" src="/doctor_headshot_images/george_mundanthanam.png"
+                            alt="doctor headshot">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="headshot_box">
+                    <div class="d-flex justify-content-center">
+                        <img style="margin-top: 5%;" src="/doctor_headshot_images/jd_robinson_headshot.png"
+                            alt="doctor headshot">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--Container with counter for orthopedics and years in business -->
+    <section class="container-fluid p-5" style="background-color: #09174f;">
+        <div class="row doctor_count text-center">
+            <div class="col white_it_out">
+                <span id="doc_count" data-target="5" class="display-4 counter" style="font-weight: bolder;">0
+                </span>
+                <span class="display-5">Orthopedic Specialists</span>
+            </div>
+            <div class="col white_it_out">
+                <span data-target="12" class="display-4 counter" style="font-weight: bolder;"> 0</span>
+                <span class="display-5">Years in Practice</span>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--container for partners-->
+    <div class="container-fluid">
+        <div id="carouselExample" class="carousel slide m-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid">
+                        <div class="row-cols-auto" style="display: flex; justify-content: center;">
+                            <h2>OUR PARTNERS</h2>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <img src="./index_page_images/texas_state_image.png" class="col-sm-3" alt="...">
+                            <img src="./index_page_images/christus_santa_rosa.png" class="col-sm-3" alt="..."
+                                style="border: thin black;">
+                        </div>
+                        <div class="row-cols-auto" style=" display: flex; justify-content: center;">
+                            <button type="button" class="btn btn-secondary">View Affiliations</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row-cols-auto" style="display: flex; justify-content: center;">
+                            <h2>OUR PARTNERS</h2>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <img src="./index_page_images/ascension-logo.png" class="col-sm-3" alt="...">
+                            <img src="./index_page_images/st_davids_image.png" class="col-sm-3" alt="...">
+                        </div>
+                    </div>
+                    <div class="row-cols-auto" style=" display: flex; justify-content: center;">
+                        <button type="button" class="btn btn-secondary">View Affiliations</button>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" style="color: black;" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" style="color: black;" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!--container with map and directions to the office-->
+
+    <div class="container-fluid">
+        <div class="row map_container_style">
+            <h3 class="text-center"> Getting Here</h3>
+            <h4 class="text-center"> Get directions and contact information for our office.</h4>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Connect with us on social media container -->
+
+    <div class="container-fluid accent_gradient p-5">
+        <div class="row p-0 m-0 text-center">
+            <h3 class="display-4">Connect with us on Social Media!</h3>
+            <!--Facebook icon-->
+            <i class="fab fa-facebook-f"></i>
+        </div>
+    </div>
+
+    <!-- Container for a patient freview section here-->
+    <!-- Google Reviews Box -->
+
+    <section class="container-fluid review_contatiner_decoration">
+
+        <div class="row" style="margin-bottom: 30px; padding-top: 30px;">
+            <div class="col banner_text">
+                <h3>Online Reviews</h3>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 120px;">
+            <div class="col google_review_container">
+                <p>
+                <h3 class="d-flex justify-content-center" style="border: dashed red;">Review 1</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aliquid eveniet debitis eligendi
+                aperiam fugit fuga repellendus maxime necessitatibus neque, harum repellat corrupti, blanditiis
+                assumenda eaque expedita, dicta suscipit in.
+                </p>
+                <p>
+                <h3 class="d-flex justify-content-center">Review 2</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aliquid eveniet debitis eligendi
+                aperiam fugit fuga repellendus maxime necessitatibus neque, harum repellat corrupti, blanditiis
+                assumenda eaque expedita, dicta suscipit in.
+                </p>
+                <p>
+                <h3 class="d-flex justify-content-center">Review 3</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aliquid eveniet debitis eligendi
+                aperiam fugit fuga repellendus maxime necessitatibus neque, harum repellat corrupti, blanditiis
+                assumenda eaque expedita, dicta suscipit in.
+                </p>
+                <p>
+                <h3 class="d-flex justify-content-center">Review 4</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aliquid eveniet debitis eligendi
+                aperiam fugit fuga repellendus maxime necessitatibus neque, harum repellat corrupti, blanditiis
+                assumenda eaque expedita, dicta suscipit in.
+                </p>
+                <p>
+                <h3 class="d-flex justify-content-center">Review 5</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aliquid eveniet debitis eligendi
+                aperiam fugit fuga repellendus maxime necessitatibus neque, harum repellat corrupti, blanditiis
+                assumenda eaque expedita, dicta suscipit in.
+                </p>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1310 Wonder World Drive, Suite 115, <br> San Marcos, Texas 78666</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>(512)878-4203</span>
+                                <h4>Fax</h4>
+                                <span>(512)878-4209</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>sanmarcosorthopedics@outlook.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#" style="color: black;">
+                                    <h2>SAN MARCOS ORTHOPEDICS</h2>
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    Our experienced medical professionals put your healing needs first. We are proud to
+                                    provide a high quality level of
+                                    customer service, medical experience, and commitment to health and wellness to all
+                                    our patients. Our goal is to make you
+                                    feel better as quickly as possible.
+
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Surgeons</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Patient Info</a></li>
+                                <li><a href="#">Appointments</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <!-- <li><a href="#">Expert Team</a></li> -->
+                                <li><a href="#">Contact us</a></li>
+                                <!-- <li><a href="#">Latest News</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, San Marcos Orthopedics All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+    <!--Script Files needed-->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+    <!--My Script File-->
+    <script defer src="/script/script.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

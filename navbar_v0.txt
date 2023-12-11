@@ -1,0 +1,99 @@
+ <!--First container with first row with button and phone number-->
+        <!--<div class="container-fluid">
+            <div class=" d-flex flex-row-reverse">
+                <div class="">
+                    <button class="btn btn-black">Contact Us 210-999-9999</button>
+                </div>
+                <div class="p-2">
+                </div>
+            </div>
+        </div>-->
+
+        <!--Second container and row with many company icon-->
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="col" style="outline: dashed red;">
+                    <a href="#">
+                        <h3>San Marcos Orthopedics</h3>
+                    </a>
+                </div>
+                <div class="col d-flex align-items-end justify-content-end" style="outline: dashed red;">
+                    <!--<div>
+                        <button class="btn btn-black">Contact Us 999-999-9999</button>
+                    </div>-->
+                    <form class="d-inline-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- Second column with group of buttons
+                <div class="col">
+                    <div class="d-flex button_group">
+                        <button class="btn btn-outline-success">PATIENT PORTAL</button>
+                        <button class="btn btn-success book_appointment">BOOK APPOINTMENT</button>
+                        <button class="btn btn-danger pay_your_bill">PAY YOUR BILL</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+    </header>
+
+    <!--Third container with main navigation bar for users to get around site-->
+    <!-- Gray container with bootstrap navbar bar 
+    <div class="container-fluid sticky-top">-->
+
+        <nav class="navbar navbar-expand-xxl bg-body-secondary"
+            style="font-style: italic; margin: 5px; font-size: small;">
+            <!--<circle> class to add effects around links-->
+            <div class="container-sm">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">EXPERTS</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="#">Action</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">SERVICES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">PATIENT RESOURCES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">CONTACT US</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>

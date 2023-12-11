@@ -1,0 +1,160 @@
+   <!--Deprecated code 12/03/2023-->
+    <!-- <div class="container-fluid" style="background-color: #03120E">
+        <div class="row">
+            <div class="col text-center" style="color: white;">
+                <h3> Content here</h3>
+            </div>
+            <div class="col">
+                <p class="test_scss">
+                    Hello Test SCSS
+                </p>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!--Deprecated code 12/03/2023-->
+    <!--footer bar at the bottom of the index page-->
+
+    <footer class="container-fluid" style="background-color: #03120E">
+
+        <!--Entire row with 3 columns-->
+        <div class="row">
+            <div class="col vertical-Outline d-flex justify-content-center m-1">
+                <div class="left">
+                    <p class="about">
+                        <span> San Marcos Orthopedic Mission</span> Ut congue augue non tellus bibendum, in
+                        varius
+                        tellus
+                        condimentum.
+                        In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien
+                        ultrices
+                        eleifend. Integer tellus est, vehicula eu lectus tincidunt,
+                        ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam
+                        quis
+                        augue.
+                        Nam ut
+                        nibh mollis, tristique ante sed, viverra massa.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col vertical-Outline d-flex justify-content-center white_it_out">
+
+                <!-- Middle Column Starts Here -->
+                <div class=" " style="padding-top: 15px;">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span> 1310 Wonder World Drive, Suite 115</span> San Marcos, Texas, 78666</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p> (512) 878-4203</p>
+                        <i class="fa fa-fax"></i>
+                        <p> (512) 878-4209</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a class="white_it_out" href="#"> office@company.com</a></p>
+                    </div>
+                </div>
+                <!-- Middle Column Ends Here -->
+
+
+            </div>
+
+            <div class="col">
+
+                <p>
+                    <a class="white_it_out" href="#"> Home </a> |
+                    <a class="white_it_out" href="#"> About </a> |
+                    <a class="white_it_out" href="#"> Services </a> |
+                    <a class="white_it_out" href="#"> Contact Us </a> |
+
+                </p>
+                <p class="white_it_out d-flex justify-content-start" style="font-size: .75rem;margin-top: 2rem;">
+                    COPYRIGHT © 2023 SAN
+                    MARCOS
+                    ORTHOPEDICS - ALL
+                    RIGHTS RESERVED.
+                <p>
+
+
+            </div>
+
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    //css to go with top code
+
+
+    // *****************************
+// Footer styling starts here
+/*Footer dress up*/
+
+.white_it_out {
+  color: white;
+}
+
+footer {
+  border-top: thick double white;
+}
+
+/* Left Column Starts Here */
+/* .left {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    padding-right: 20px;
+    border-right: solid #fff 1px;
+}
+
+.left .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.left .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+} */
+
+.about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.vertical-Outline {
+  border-right: thick double white;
+}
+
+$mycolor: red;
+$fontSize: 1.5rem;
+
+.test_scss {
+  color: $mycolor;
+  font-size: $fontSize;
+  font-style: italic;
+}
+
+
+
