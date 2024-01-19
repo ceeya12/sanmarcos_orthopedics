@@ -1,0 +1,42 @@
+Instructions
+Copy the code snippet you would like to use and paste it on your site where you would like the content to appear.
+Mako Total Hip Replacement Animation Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_tha_animation_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tha_animation_video/code.js"></script>
+<!-- STRYKER content end -->
+Mako Total Knee Replacement Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_total_knee_replacement_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_total_knee_replacement_video/code.js"></script>
+<!-- STRYKER content end -->
+Mako Total Knee Replacement Testimonial Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_tka_testimonial_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tka_testimonial_video/code.js"></script>
+<!-- STRYKER content end -->
+Mako Total Knee Replacement Animation Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_tka_animation_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tka_animation_video/code.js"></script>
+<!-- STRYKER content end -->
+Mako Total Hip Replacement Testimonial Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_tha_testimonial_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tha_testimonial_video/code.js"></script>
+<!-- STRYKER content end -->
+Mako for Total Hip replacement
+<!-- STRYKER content begin -->
+<div id="syk_mako_tha"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tha/code.js"></script>
+<!-- STRYKER content end -->
+Mako for Total Knee replacement
+<!-- STRYKER content begin -->
+<div id="syk_mako_tka"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_tka/code.js"></script>
+<!-- STRYKER content end -->
+Mako Total Hip Replacement Video
+<!-- STRYKER content begin -->
+<div id="syk_mako_total_hip_replacement_video"></div>
+<script src="https://d2ybmd3wevur4k.cloudfront.net/mako_total_hip_replacement_video/code.js"></script>
+<!-- STRYKER content end -->

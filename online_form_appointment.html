@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Appointment Booking</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Awesome & Icons
+        
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />-->
+
+    <script src="https://kit.fontawesome.com/6f3598bd12.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <!--Google Maps-->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/style_sheets/style.css" />
+    <script type="module" src="./index.js"></script> -->
+
+    <!-- fuse js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("_G6M8qr8zBGgRMnmf");
+        })();
+    </script>
+
+
+    <!-- My CSS style Sheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="sticky-top">
+
+        <!-- First container with Company logo and navbar buttons -->
+
+        <nav class="navbar navbar-expand-lg bg-white" style="font-size: large;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col">
+                    <a class="navbar-brand" href="#">
+                        <img src="/smo_logos/logo_exp_1.png" alt="company logo">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="border-top: solid 2px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our Surgeons
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                    <li><a class="dropdown-item" href="/joshuacrum.html">Dr. Crum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. McDonnell</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dr. Mundanthenum</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/johndrobinson.html">Dr. Robinson</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/aseemsaini.html">Dr. Saini</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu" style="background-color: #7294BB;">
+
+                                    <li>
+                                        <span id="myPopover" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            data-bs-placement="left">
+                                            <a href="#" class="dropdown-item">Joint Replacement</a>
+                                            <a data-bs-content="test" href=""></a>
+
+                                        </span>
+
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Sports Medicine</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Foot and Ankle</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Hand</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Fracture Care</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Patient Info</a>
+                                <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                    <li><a href="#" class="dropdown-item">First Visit Guide</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Post Op Instructions</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Insurance Information</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Patient Medical Records Request</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Online Bill Pay</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Appointments</a>
+                                <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                    <li><a href="/online_form_appointment.html" class="dropdown-item">General
+                                            Appointment</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row" style="background-color: #294c74">
+            <div class="col">
+                <a href="#" style="text-decoration: none;">
+                    <span class="badge rounded-pill text-bg-light"
+                        style="margin-left: 10px; margin-top: 12px; width: 12rem; font-size: medium;">Online
+                        Bill Pay
+                    </span>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <span class="header_phone">
+
+                        <i class="fas fa-phone"></i>
+                        (512)-878-4203
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="col d-flex justify-content-end">
+                <form id="search-form" class="d-flex p-2" style="width: 375px;" name="search" role="search">
+                    <input id="search" name="search" type="search" class="form-control me-2" placeholder="Search">
+                    <button id="searchBtn" class="btn btn-outline-light" type="submit">SEARCH</button>
+
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid">
+        <div class="row-cols-2 d-flex justify-content-center">
+
+            <div class="modal_custom hidden_all container-fluid">
+                <button class="close-modal">&times;</button>
+                <h3 class="d-flex justify-content-center" style="text-decoration: underline;">Search Results:</h3>
+                <div class="col-sm-4" id="search-results" aria-label="search results"></div>
+            </div>
+        </div>
+        <div class="overlay hidden_all"></div>
+
+    </section>
+
+
+
+    <!-- container for modal -->
+    <div class="container-fluid">
+
+        <div class="modal_custom hidden_all">
+            <button class="close-modal">&times;</button>
+            <h2>Search Results:</h2>
+            <div id="search-results" aria-label="search results">
+
+            </div>
+        </div>
+
+        <div class="overlay hidden_all"></div>
+
+        <!-- container above appointment form -->
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row banner_form">
+            <h3>Appointment Request</h3>
+        </div>
+    </div>
+
+
+    <!-- container for form online appointment -->
+
+    <section style="margin-bottom: 40px;">
+        <div class="container-fluid" style="margin-top: 30px;">
+            <div class="row d-flex justify-content-center">
+                <p class="d-flex justify-content-center">Note: Online forms are only
+                    for general appointments/inquiries. </p>
+                <p class="d-flex justify-content-center"> Please do not submit any
+                    medical questions or your personal health information.
+                </p>
+
+                <form id="submission" name="submission">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-3 form-group required">
+                            <label class="control-label" for="firstName" type="text" value=""> First
+                                Name:</label>
+                            <input id="firstName" type="firstName" class="form-control bg_form_input form_invalid"
+                                required>
+                        </div>
+                        <div class="col-sm-3 form-group required">
+                            <label class="control-label" for="lastName"> Last Name:</label>
+                            <input id="lastName" type="lastName" class="form-control bg_form_input" required>
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-3 form-group required">
+                            <label class="control-label" for="mobileNumber"> Mobile Number:</label>
+                            <input id="mobileNumber" name="contact_number" class="form-control bg_form_input"
+                                pattern="^\d{10}$" required>
+                        </div>
+                        <div class="col-sm-3 form-group required">
+                            <label class="control-label" for="email"> Email:</label>
+                            <input id="email" type="email" class="form-control bg_form_input" required>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-sm-6">
+                            <label for="Injury Details"> Injury Details:</label>
+                            <textarea class="form-control bg_form_input" name="injuryDetails" id="injuryDetails"
+                                cols="115" rows="5"></textarea>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- Form section for user to select preferred doctor -->
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-3">
+                            <label for="preferred doctor"> Preferred Doctor:</label>
+                            <select id="surgeonSelect" type="firstName" class="form-select bg_form_input">
+                                <option value="">Choose Your Doctor:</option>
+                                <option value="Dr. Joshua Crum">Dr. Joshua Crum</option>
+                                <option value="Dr. Mark McDonnell">Dr. Mark McDonnell</option>
+                                <option value="Dr. George Mundanthanum">Dr. George Mundanthanum</option>
+                                <option value="Dr. John D. Robinson">Dr. John D. Robinson</option>
+                                <option value="Dr. Aseem Saini">Dr. Aseem Saini</option>
+                            </select>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="lastName"> Preferred Location:</label>
+                            <select class="form-select bg_form_input" name="" id="locationChoice">
+                                <option value="">Choose Location:</option>
+                                <option value="San Marcos, TX">San Marcos, TX</option>
+                                <option value="Austin, TX">Austin, TX</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="col-sm-3">
+                            <label for="">Insurance Provider</label>
+                            <select name="" id="insuranceOption" class="form-select bg_form_input">
+                                <option value="">Choose your insurance:</option>
+                                <option value="Aetna">Aetna</option>
+                                <option value="BCBS TX">BCBS TX</option>
+                                <option value="Coventry">Coventry</option>
+                                <option value="Health Smart">Health Smart? PPO/HPO via IPA</option>
+                                <option value="Medicare">Medicare</option>
+                                <option value="Office">Office of Worker Comp</option>
+                                <option value="Sedgwick Claims Managment Servcies">Sedgewick Claims Management Services
+                                </option>
+                                <option value="Texas Mutual">Texas Mutual</option>
+                                <option value="Tricare Certification">Tricare Certification</option>
+                                <option value="Tricare East(Humana Military)">Tricare East(Humana Military)</option>
+                                <option value="TriWest Healthcare Allianace">TriWest Healthcare Allianace</option>
+                                <option value="SPHN(Seton Physician Hospital Network)">SPHN(Seton Physician Hospital
+                                    Network)</option>
+                                <option value="United Healthcare">United Healthcare</option>
+                                <option value="Humana">Humana</option>
+                                <option value="Cigna">Cigna</option>
+                                <option value="Multiplan-PHCS">Multiplan-PHCS</option>
+                                <option value="Oscar">Oscar</option>
+                                <option value="PHCS">PHCS</option>
+                                <option value="FirstHealth">First Health</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label for="">Additional Information:</label>
+                            <textarea class="form-control bg_form_input" name="" id="" cols="30" rows="1"></textarea>
+                        </div>
+                    </div>
+
+                    <!--Form section referral radio buttons -->
+                    <div class="row d-flex justify-content-center" style="margin-top: 30px;">
+
+                        <div class="col-sm-3 d-flex justify-content-evenly">
+                            <label> Do you have a current referral?</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input id="yesReferral" class="form-check-input" type="radio" name="referral"
+                                        value="Yes">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <input class="form-check-input" type="radio" name="referral" id="noReferral"
+                                    value="No">No
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <!-- Form section for patient imaging -->
+                        <div class="col-sm-3 d-flex justify-content-evenly">
+                            <label> Do you have any recent imaging?</label>
+                            <div class="form-check">
+
+                                <label class="form-check-label">
+                                    <input id="xraysYes" class="form-check-input" type="radio" name="imagingRadio"
+                                        value="Yes">Yes
+                                </label>
+                            </div>
+                            <div class="form-check-label">
+                                <label class="form-check-label">
+                                    <input id="xraysNo" class="form-check-input" type="radio" name="imagingRadio"
+                                        value="No">No</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+
+
+                        <!-- <div class="col-sm-3 d-flex justify-content-evenly">
+
+                            <label> Are You?</label>
+                            <div class="form-check">
+                                <input id="yesXrays" class="form-check-input" type="radio" name="flexRadioDefault"
+                                    autocomplete="off">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Current Patient
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input id="noXrays" class="form-check-input" type="radio" name="flexRadioDefault"
+                                    autocomplete="off">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    New Patient
+                                </label>
+                            </div>
+
+
+                        </div> -->
+
+                        <!-- <div class="col-sm-3 d-flex justify-content-evenly">
+
+                            <label> Preferred Contact Method </label>
+                            <div class="form-check">
+                                <input id="yesXrays" class="form-check-input" type="radio" name="flexRadioDefault"
+                                    autocomplete="off">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Phone
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input id="noXrays" class="form-check-input" type="radio" name="flexRadioDefault"
+                                    autocomplete="off">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Email
+                                </label>
+                            </div>
+
+
+                        </div> -->
+
+
+                    </div>
+
+                    <!-- Privacy checkbox row -->
+
+                    <div class="row form-group required" style="margin-top: 20px;">
+                        <div class="form-check d-flex justify-content-center control-label">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                We care about your privacy. By checking this box you confirm that you have read and
+                                understand our <a href="">privacy policy</a> and consent to your personal information to
+                                us.
+
+
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="row-cols-md-4 d-flex justify-content-center" style="margin-top: 20px;">
+                        <button id="submitBtn" class="btn btn-dark">Submit</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- footer starts at this point  -->
+
+    <footer class="container-fluid" style="border-top: solid black;">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+
+                                <h4>Find Us</h4>
+                                <span>1310 Wonder World Drive, Suite 115, <br> San Marcos, Texas 78666</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call Us</h4>
+                                <span>(512)878-4203</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-fax alt"></i>
+                            <div class="cta-text">
+                                <h4>Fax Us</h4>
+                                <span>(512)878-4209</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <div class="cta-text">
+                                <i class="far fa-envelope-open"></i>
+                                <h4>Mail Us</h4>
+                                <span><a href="mailto:sanmarcosorthopedics.com">sanmarcosorthopedics@outlook.com</a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="/index.html" class="d-flex justify-content-center">
+                                    <img src="/smo_logos/smo_footer_logo_1.png" alt="san marcos orthopedics">
+
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p style="font-weight: 600; color: black;">
+                                    Our experienced medical professionals put your healing needs first. We are
+                                    proud to
+                                    provide a high quality level of
+                                    customer service, medical experience, and commitment to health and wellness to
+                                    all
+                                    our patients. Our goal is to make you
+                                    feel better as quickly as possible.
+
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://m.facebook.com/p/San-Marcos-Orthopedics-100066305811594/">
+                                    <i class="fab fa-facebook-f facebook-bg"></i>
+                                </a>
+                                <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/aboutus.html">About Us</a></li>
+                                <li><a href="#">Our Surgeons</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Patient Info</a></li>
+                                <li><a href="/online_form_appointment.html">Appointments</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our news feed, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input class="form-control" type="text" placeholder="Email Address">
+                                    <button class="btn"><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, San Marcos Orthopedics All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <!--Script Files needed-->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+
+
+
+    <!--My Script File-->
+    <script src="/script/appointmentOnline.js"></script>
+
+
+
+
+
+</body>
+
+</html>

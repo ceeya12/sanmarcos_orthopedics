@@ -20,16 +20,15 @@
     "title": "San Marcos Orthopedics",
     "phonenumber": "512-878-4203",
     "email": "sanmarcosorthopedics@outlook.com",
-
     "surgeons": {
-      "firstname": "Mark",
-      "lastname": "McDowell",
+      "firstname": "Aseem",
+      "lastname": "Saini",
       "specialities": [
         {
-          "value": "knee"
+          "value": "Foot"
         }
       ],
-      "href": "https://www.smorthopedics.com/markmcdowell"
+      "href": "./aseemsaini.html"
     }
   },
 
@@ -39,11 +38,17 @@
     "email": "sanmarcosorthopedics@outlook.com",
 
     "surgeons": {
-      "firstname": "John ",
+      "firstname": "John D.",
       "lastname": "Robinson",
       "specialities": [
         {
-          "value": "ankle"
+          "value": "Sports Medicine"
+        },
+        {
+          "value": "Knee"
+        },
+        {
+          "value": "Hip"
         }
       ],
       "href": "https://www.smorthopedics.com/jd-robinson.html"
