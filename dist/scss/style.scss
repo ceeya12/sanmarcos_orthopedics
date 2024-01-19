@@ -20,7 +20,7 @@ $popover-header-color: white;
 $popover-border-width: 10px;
 $popover-border-color: $blueTang;
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "/dist/node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
   padding: 0;
@@ -475,7 +475,7 @@ h1 {
   font-size: 3rem;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "/dist/node_modules/bootstrap/scss/bootstrap";
 
 /*container for map and directions*/
 /*google map*/
@@ -504,7 +504,7 @@ h1 {
 //styling starts here for container*/
 
 .review_container_decoration {
-  background-image: url("/images/index_page_images/review_container_bg.png");
+  background-image: url("images/index_page_images/review_container_bg.png");
 }
 .banner_text {
   color: white;
