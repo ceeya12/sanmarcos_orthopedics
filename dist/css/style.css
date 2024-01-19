@@ -25973,7 +25973,7 @@ fieldset:disabled .btn {
 //Container for reviews section
 //styling starts here for container*/
 .review_container_decoration {
-  background-image: url("images/index_page_images/review_container_bg.png");
+  background-image: url("/images/index_page_images/review_container_bg.png");
 }
 
 .banner_text {
