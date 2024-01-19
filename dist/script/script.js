@@ -11,12 +11,12 @@ const imgTargets = document.querySelectorAll("img[data-src]");
 /////////////////////////////////////////////////////////////////
 //Google translate services
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguate: "en" },
-    "google_translate_element"
-  );
-}
+// function googleTranslateElementInit() {
+//   new google.translate.TranslateElement(
+//     { pageLanguate: "en" },
+//     "google_translate_element"
+//   );
+// }
 
 /////////////////////////////////////////////////////////////////
 //Implementing full text search components
