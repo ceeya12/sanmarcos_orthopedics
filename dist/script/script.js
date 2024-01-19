@@ -150,10 +150,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class ="popover_nav">
                     <h6 class="popover_title">Surgeons</h6>
                     <ul class="popover_title">
-                    <img src="/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="">
+                    <img src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="">
                     <h6>Dr. Crum</h6>
 
-                    <img src="/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="">
+                    <img src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="">
                     <h6>Dr. Robinson</h6>
 
                     </ul>
