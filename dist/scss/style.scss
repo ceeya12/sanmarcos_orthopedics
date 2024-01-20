@@ -71,6 +71,8 @@ nav {
   cursor: pointer;
   border: none;
   background: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .hidden_all {
