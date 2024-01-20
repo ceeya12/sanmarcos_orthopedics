@@ -71,8 +71,6 @@ nav {
   cursor: pointer;
   border: none;
   background: none;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .hidden_all {
@@ -98,6 +96,9 @@ nav {
     width: 390px;
     margin: 30px;
     overflow-y: scroll;
+  }
+  .close-modal {
+    overflow: hidden;
   }
 }
 
