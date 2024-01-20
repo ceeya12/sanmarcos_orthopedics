@@ -42,7 +42,7 @@ nav {
 
 .modal_custom {
   position: absolute;
-  top: 20%;
+  top: 50%;
   height: 700px;
   background-color: white;
   padding: 6rem;
@@ -51,6 +51,15 @@ nav {
   z-index: 10;
 }
 
+@media screen and (max-width: 800px) {
+  .modal_custom {
+    position: absolute;
+    top: 250px;
+    height: 500px;
+    width: 390px;
+    margin: 20px;
+  }
+}
 .remove-scrolling {
   height: 100%;
   overflow: hidden;
@@ -58,7 +67,6 @@ nav {
 
 .center_search_content {
   font-size: small;
-  word-wrap: break-word;
   font-weight: bold;
 }
 
@@ -419,7 +427,7 @@ h1 {
 //Container for reviews section
 //styling starts here for container*/
 .review_container_decoration {
-  background-image: url("images/index_page_images/review_container_bg.png");
+  background-image: url("/images/index_page_images/review_container_bg.png");
 }
 
 .banner_text {
