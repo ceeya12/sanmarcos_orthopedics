@@ -3271,6 +3271,12 @@ input.btn {
   color: white;
 }
 
+.paragraph_bio p {
+  color: white;
+  font-size: x-large;
+  padding: 40px;
+}
+
 .phys-loc-blocks .loc-hold {
   padding: 5px;
   width: 90%;
@@ -5364,6 +5370,15 @@ input.btn {
 @media (max-width: 390px) {
   #marketing {
     height: 500px;
+  }
+}
+
+//scale video down for smaller viewports
+@media screen and (max-width: 800px) {
+  .scale_video {
+    height: 400px;
+    width: 390px;
+    margin: 40px;
   }
 }
 
