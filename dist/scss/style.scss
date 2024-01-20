@@ -91,9 +91,9 @@ nav {
 @media screen and (max-width: 800px) {
   .modal_custom {
     position: absolute;
+    top: 250px;
     height: 500px;
     width: 390px;
-    top: 90%;
     margin: 20px;
   }
 }
