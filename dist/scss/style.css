@@ -55,7 +55,8 @@ nav {
   .modal_custom {
     height: 300px;
     width: 390px;
-    top: 50%;
+    top: 60%;
+    padding: 20px;
   }
 }
 .remove-scrolling {
