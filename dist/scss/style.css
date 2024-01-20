@@ -53,9 +53,9 @@ nav {
 
 @media screen and (max-width: 800px) {
   .modal_custom {
-    height: 300px;
+    height: 500px;
     width: 390px;
-    top: 70%;
+    top: 80%;
     padding: 20px;
   }
 }
