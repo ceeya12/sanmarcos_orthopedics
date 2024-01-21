@@ -3198,6 +3198,28 @@ input.btn {
     display: none;
   }
 }
+.container_mako_video {
+  display: flex;
+  flex-direction: row;
+}
+
+.individual_mako_video {
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container_mako_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .individual_mako_video {
+    height: 250px;
+    width: 300px;
+  }
+}
 @media (max-width: 610px) {
   .row .col {
     margin-left: 0 !important;
