@@ -183,26 +183,26 @@ document.addEventListener("DOMContentLoaded", function () {
 //////////////////////////////////////////////////////////////////////////////
 //lazy loading functionality for images
 
-const loadImg = function (entries, observer) {
-  const [entry] = entries;
-  console.log(imgTargets);
+// const loadImg = function (entries, observer) {
+//   const [entry] = entries;
+//   console.log(imgTargets);
 
-  if (!entry.isIntersecting) return;
+//   if (!entry.isIntersecting) return;
 
-  //replace the src attribute from image with data-src
+//   //replace the src attribute from image with data-src
 
-  entry.target.src = entry.target.dataset.src;
+//   entry.target.src = entry.target.dataset.src;
 
-  entry.target.addEventListener("load", function () {
-    entry.target.classList.remove("lazy-loading-img");
-  });
-};
-const imgObserver = new IntersectionObserver(loadImg, {
-  root: null,
-  threshold: 0,
-});
+//   entry.target.addEventListener("load", function () {
+//     entry.target.classList.remove("lazy-loading-img");
+//   });
+// };
+// const imgObserver = new IntersectionObserver(loadImg, {
+//   root: null,
+//   threshold: 0,
+// });
 
-imgTargets.forEach((img) => imgObserver.observe(img));
+// imgTargets.forEach((img) => imgObserver.observe(img));
 
 /////////////////////////////////////////////////////////////////////////////
 //popovers over headshots
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const popOverJC = document.getElementById("popOverJC");
 
-document.addEventListener("DOMContentLoaded", function () {
+popOverJC.addEventListener("DOMContentLoaded", function () {
   const html = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Sports Medicine</li>
