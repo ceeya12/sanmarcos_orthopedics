@@ -223,18 +223,13 @@ const popoverListHeadShotMark = [...popoverTriggerListHeadShotMark].map(
     })
 );
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   new bootstrap.Popover(popOverMD, {
-//     title: '<h6 class="popover_title">Top Procedures</h6>',
-//     content: html,
-//     html: true,
-//   });
-// });
+//Headshot for Joshua Crum
 
-const popOverJC = document.getElementById("popOverJC");
+const popoverTriggerListHeadshotJc = document.querySelectorAll(
+  '[data-bs-toggle="popoverJC"]'
+);
 
-popOverJC.addEventListener("DOMContentLoaded", function () {
-  const html = `<div class="popover_container">
+const htmlJoshua = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Sports Medicine</li>
                 <li class="animation_li">General Orthopedics</li>
@@ -245,11 +240,20 @@ popOverJC.addEventListener("DOMContentLoaded", function () {
                 </ul>
                 </div>`;
 
-  const popover = new bootstrap.Popover(popOverJC, {
-    title: '<h6 class="popover_title">Top Procedures</h6>',
-    content: html,
-    html: true,
-  });
+const popoverListJc = [...popoverTriggerListHeadshotJc].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      offset: [-100, -100],
+      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
+      content: htmlJoshua,
+      html: true,
+    })
+);
+
+const popover = new bootstrap.Popover(popOverJC, {
+  title: '<h6 class="popover_title">Top Procedures</h6>',
+  content: html,
+  html: true,
 });
 
 const popOverGm = document.getElementById("popOverGm");
