@@ -203,9 +203,9 @@ document.addEventListener("DOMContentLoaded", function () {
 /////////////////////////////////////////////////////////////////////////////
 //popovers over headshots
 //headshot for surgeon -> popover
-const popOverMD = document.getElementById("headShotMD");
 
 document.addEventListener("DOMContentLoaded", function () {
+  const popOverMD = document.getElementById("headShotMD");
   const html = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Foot and ankle surgery</li>
@@ -214,8 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
                 </ul>
                 </div>`;
-
-  const popover = new bootstrap.Popover(popOverMD, {
+  new bootstrap.Popover(popOverMD, {
     title: '<h6 class="popover_title">Top Procedures</h6>',
     content: html,
     html: true,
