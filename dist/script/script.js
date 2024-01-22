@@ -143,7 +143,7 @@ document.addEventListener("keydown", function (e) {
 //path is Services -> Joint Replacement...Sports Medicine
 
 const popoverTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="popover"]'
+  '[data-bs-toggle="popoverNav"]'
 );
 
 const htmlContent = `
