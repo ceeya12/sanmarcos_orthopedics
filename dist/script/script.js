@@ -112,11 +112,11 @@ searchForm.addEventListener("input", async function (e) {
   searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
 });
 
-// searchBtn.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   openModal();
-//   console.log(`Button Clicked`);
-// });
+searchBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  openModal();
+  console.log(`Button Clicked`);
+});
 
 //close model event handlers
 //modal button X
@@ -250,16 +250,13 @@ const popoverListJc = [...popoverTriggerListHeadshotJc].map(
     })
 );
 
-const popover = new bootstrap.Popover(popOverJC, {
-  title: '<h6 class="popover_title">Top Procedures</h6>',
-  content: html,
-  html: true,
-});
+//headshot for George Mundanthanum
 
-const popOverGm = document.getElementById("popOverGm");
+const popoverTriggerListHeadshotGeorge = document.querySelectorAll(
+  '[data-bs-toggle="popoverGeorge"]'
+);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const html = `<div class="popover_container">
+const htmlGeorge = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Hand and wrist surgery</li>
                 <li class="animation_li">Fractures and trauma of the hand and wrist</li>
@@ -268,17 +265,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li class="animation_li">Microsurgery</li>
                 </ul>`;
 
-  const popover = new bootstrap.Popover(popOverGm, {
-    title: '<h6 class="popover_title">Top Procedures</h6>',
-    content: html,
-    html: true,
-  });
-});
+const popoverListGeorge = [...popoverTriggerListHeadshotGeorge].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      offset: [-100, -100],
+      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
+      content: htmlGeorge,
+      html: true,
+    })
+);
 
-const popOverJr = document.getElementById("popOverJr");
+//Headshot for John D. Robinson
 
-document.addEventListener("DOMContentLoaded", function () {
-  const html = `
+const popoverTriggerListHeadshotJohn = document.querySelectorAll(
+  '[data-bs-toggle="popoverJohn"]'
+);
+const htmlJohn = `
               <div class="popover_container">
                 <ul> 
                 <li class="animation_li">Sports Medicine</li>
@@ -292,17 +294,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 `;
 
-  const popover = new bootstrap.Popover(popOverJr, {
-    title: '<h6 class="popover_title">Top Procedures</h6>',
-    content: html,
-    html: true,
-  });
-});
+const popoverListJohn = [...popoverTriggerListHeadshotJohn].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      offset: [-100, -100],
+      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
+      content: htmlJohn,
+      html: true,
+    })
+);
 
-const popOverAs = document.getElementById("popOverAs");
+//headshot index page for Aseem Saini
 
-document.addEventListener("DOMContentLoaded", function () {
-  const html = `<div class="popover_container">
+const popoverTriggerListHeadshotAseem = document.querySelectorAll(
+  '[data-bs-toggle="popoverAseem"]'
+);
+
+const htmlAseem = `<div class="popover_container">
                 <ul>
                 <li class="animation_li">Foot and ankle Surgery</li>
                 <li class="animation_li">Injections, ingrown nails, would care, diabetic care </li>
@@ -310,13 +318,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
                 </ul>
                 </div>`;
-
-  const popover = new bootstrap.Popover(popOverAs, {
-    title: '<h6 class="popover_title">Top Procedures</h6>',
-    content: html,
-    html: true,
-  });
-});
+const popoverListAseem = [...popoverTriggerListHeadshotAseem].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      offset: [-100, -100],
+      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
+      content: htmlAseem,
+      html: true,
+    })
+);
 
 ////////////////////////////////////////////////////////////////////////
 /*Navy blue 3rd conatiner on index page */
