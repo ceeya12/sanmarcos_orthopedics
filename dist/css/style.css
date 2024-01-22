@@ -11855,15 +11855,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /*-------------------------------------*/

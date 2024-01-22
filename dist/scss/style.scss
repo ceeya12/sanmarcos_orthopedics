@@ -23,15 +23,16 @@ $popover-border-color: $blueTang;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-html,
-body {
-  overflow-x: hidden;
-}
+// html,
+// body {
+//   overflow-x: hidden;
+// }
 
 body {
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   width: 100%;
+  overflow-x: hidden;
   // position: relative;
   // box-sizing: border-box;
   // background-image: url("/Untitled.png");
