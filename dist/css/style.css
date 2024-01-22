@@ -12216,7 +12216,7 @@ h1, .h1 {
 .popover_container {
   border-radius: 10px;
   font-size: medium;
-  z-index: 1;
+  z-index: -1;
 }
 
 .animation_li {
@@ -12348,6 +12348,7 @@ ul {
 .cta-text {
   padding-left: 15px;
   display: inline-block;
+  padding-bottom: 40px;
 }
 
 .cta-text h4, .cta-text .h4 {
