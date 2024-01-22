@@ -142,15 +142,8 @@ document.addEventListener("keydown", function (e) {
 //popovers over Nav links
 //path is Services -> Joint Replacement...Sports Medicine
 
-const popoverTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="popover"]'
-);
-
-const popoverList = [...popoverTriggerList].map(
-  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-);
-
 document.addEventListener("DOMContentLoaded", function () {
+  // const popoverTriggerList = document.getElementById("myPopover");
   const element = document.getElementById("myPopover");
   const htmlContent = `
                     <div class ="popover_nav">
@@ -167,6 +160,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   `;
+
+  // const popoverList = [...popoverTriggerList].map(
+  //   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+  // );
   const popoverNav = new bootstrap.Popover(element, {
     // title:
     //   '<h6 class="custom-title"><i class="bi-info-circle-fill"></i> Popover info</h6>',
@@ -203,6 +200,14 @@ document.addEventListener("DOMContentLoaded", function () {
 /////////////////////////////////////////////////////////////////////////////
 //popovers over headshots
 //headshot for surgeon -> popover
+
+// const popoverTriggerList = document.querySelectorAll(
+//   '[data-bs-toggle="popover"]'
+// );
+// const popoverList = [...popoverTriggerList].map(
+//   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+// );
+
 const popOverMD = document.getElementById("headShotMD");
 
 document.addEventListener("DOMContentLoaded", function () {
