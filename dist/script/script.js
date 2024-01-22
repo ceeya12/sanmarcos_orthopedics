@@ -147,8 +147,9 @@ const popoverTriggerList = document.querySelectorAll(
 );
 
 const htmlContent = `
-                    <div class ="popover_nav">
                     <button type="button"> 
+                    <div class ="popover_nav">
+                    
                     <ul class="popover_title">
                     <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
                     <h6>Dr. Crum</h6>
@@ -157,8 +158,9 @@ const htmlContent = `
                     <h6>Dr. Robinson</h6>
 
                     </ul>
-                    </button>
+                    
                   </div>
+                  </button>
 
   
   `;
