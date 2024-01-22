@@ -142,12 +142,12 @@ document.addEventListener("keydown", function (e) {
 //popovers over Nav links
 //path is Services -> Joint Replacement...Sports Medicine
 
-document.addEventListener("DOMContentLoaded", function () {
-  // const popoverTriggerList = document.getElementById("myPopover");
-  const element = document.getElementById("myPopover");
-  const htmlContent = `
+const popoverTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="popover"]'
+);
+
+const htmlContent = `
                     <div class ="popover_nav">
-                    <h6 class="popover_title">Surgeons</h6>
                     <ul class="popover_title">
                     <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
                     <h6>Dr. Crum</h6>
@@ -160,18 +160,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   `;
-
-  // const popoverList = [...popoverTriggerList].map(
-  //   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-  // );
-  const popoverNav = new bootstrap.Popover(element, {
-    // title:
-    //   '<h6 class="custom-title"><i class="bi-info-circle-fill"></i> Popover info</h6>',
-    // content: '<p class="popover_nav">Test</p>',
-    content: htmlContent,
-    html: true,
-  });
-});
+const popoverList = [...popoverTriggerList].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      title: '<h6 class="popover_title">Surgeons</h6>',
+      content: htmlContent,
+      html: true,
+    })
+);
 
 //////////////////////////////////////////////////////////////////////////////
 //lazy loading functionality for images
