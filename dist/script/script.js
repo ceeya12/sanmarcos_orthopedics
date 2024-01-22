@@ -217,6 +217,7 @@ const popoverListHeadShotMark = [...popoverTriggerListHeadShotMark].map(
   (popoverTriggerEl) =>
     new bootstrap.Popover(popoverTriggerEl, {
       placement: "bottom",
+      offset: "[20,5]",
       animation: true,
       title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
       content: htmlMark,
