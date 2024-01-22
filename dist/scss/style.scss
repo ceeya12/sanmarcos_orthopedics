@@ -3,6 +3,7 @@
 //logo color
 $blueTang: #294c74;
 
+//first color scheme
 $cambridgeBlue: #92b5b1;
 $charcoal: #425661;
 $darkSlateGray: #26403b;
@@ -20,7 +21,7 @@ $popover-header-color: white;
 $popover-border-width: 10px;
 $popover-border-color: $blueTang;
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
   padding: 0;
