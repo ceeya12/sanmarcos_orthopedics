@@ -6,7 +6,7 @@ const modal = document.querySelector(".modal_custom");
 const searchForm = document.querySelector("#search-form");
 const searchResults = document.querySelector("#search-results");
 //images dom entry point for lazy loading images
-const imgTargets = document.querySelectorAll("img[data-src]");
+// const imgTargets = document.querySelectorAll("img[data-src]");
 
 /////////////////////////////////////////////////////////////////
 //weglot translate services
