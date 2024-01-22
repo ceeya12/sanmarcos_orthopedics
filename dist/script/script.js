@@ -142,7 +142,7 @@ document.addEventListener("keydown", function (e) {
 //popovers over Nav links
 //path is Services -> Joint Replacement...Sports Medicine
 
-const popoverTriggerList = document.querySelectorAll(
+const popoverTriggerListNav = document.querySelectorAll(
   '[data-bs-toggle="popoverNav"]'
 );
 
@@ -162,7 +162,7 @@ const htmlContent = `
 
   
   `;
-const popoverList = [...popoverTriggerList].map(
+const popoverListNav = [...popoverTriggerListNav].map(
   (popoverTriggerEl) =>
     new bootstrap.Popover(popoverTriggerEl, {
       placement: "left",
@@ -200,17 +200,11 @@ const popoverList = [...popoverTriggerList].map(
 //popovers over headshots
 //headshot for surgeon -> popover
 
-// const popoverTriggerList = document.querySelectorAll(
-//   '[data-bs-toggle="popover"]'
-// );
-// const popoverList = [...popoverTriggerList].map(
-//   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-// );
+const popoverTriggerListHeadShotMark = document.querySelectorAll(
+  '[data-bs-toggle="popoverMark"]'
+);
 
-const popOverMD = document.getElementById("headShotMD");
-
-document.addEventListener("DOMContentLoaded", function () {
-  const html = `<div class="popover_container">
+const htmlMark = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Foot and ankle surgery</li>
                 <li class="animation_li">Injections, ingrown nails, wound care, diabetic care </li>
@@ -218,12 +212,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
                 </ul>
                 </div>`;
-  new bootstrap.Popover(popOverMD, {
-    title: '<h6 class="popover_title">Top Procedures</h6>',
-    content: html,
-    html: true,
-  });
-});
+const popoverListHeadShotMark = [...popoverTriggerListHeadShotMark].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      title: "Top Procedures",
+      content: htmlMark,
+      html: true,
+    })
+);
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   new bootstrap.Popover(popOverMD, {
+//     title: '<h6 class="popover_title">Top Procedures</h6>',
+//     content: html,
+//     html: true,
+//   });
+// });
 
 const popOverJC = document.getElementById("popOverJC");
 
