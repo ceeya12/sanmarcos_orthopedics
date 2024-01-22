@@ -204,13 +204,14 @@ const popoverTriggerListHeadShotMark = document.querySelectorAll(
   '[data-bs-toggle="popoverMark"]'
 );
 
-const htmlMark = `<button class="popover_container">
-
+const htmlMark = `<div class="popover_container">
+                <ul>
                 <li class="animation_li">Foot and ankle surgery</li>
                 <li class="animation_li">Injections, ingrown nails, wound care, diabetic care </li>
                 <li class="animation_li">Bunions, hammertoes, ankle arthroscopy, arthritis, heal pain</li>
                 <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
-                </button>
+                </ul>
+                </div>
               `;
 const popoverListHeadShotMark = [...popoverTriggerListHeadShotMark].map(
   (popoverTriggerEl) =>
