@@ -163,6 +163,7 @@ const htmlContent = `
 const popoverList = [...popoverTriggerList].map(
   (popoverTriggerEl) =>
     new bootstrap.Popover(popoverTriggerEl, {
+      placement: "left",
       title: '<h6 class="popover_title">Surgeons</h6>',
       content: htmlContent,
       html: true,
