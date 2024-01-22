@@ -9,14 +9,10 @@ const searchResults = document.querySelector("#search-results");
 const imgTargets = document.querySelectorAll("img[data-src]");
 
 /////////////////////////////////////////////////////////////////
-//Google translate services
-
-// function googleTranslateElementInit() {
-//   new google.translate.TranslateElement(
-//     { pageLanguate: "en" },
-//     "google_translate_element"
-//   );
-// }
+//weglot translate services
+Weglot.initialize({
+  api_key: "wg_f1252e6c3f441708e2a2c16c1461400c5",
+});
 
 /////////////////////////////////////////////////////////////////
 //Implementing full text search components
@@ -160,10 +156,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class ="popover_nav">
                     <h6 class="popover_title">Surgeons</h6>
                     <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="">
+                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
                     <h6>Dr. Crum</h6>
 
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="">
+                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
                     <h6>Dr. Robinson</h6>
 
                     </ul>
@@ -171,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   `;
-  const popover = new bootstrap.Popover(element, {
+  const popoverNav = new bootstrap.Popover(element, {
     // title:
     //   '<h6 class="custom-title"><i class="bi-info-circle-fill"></i> Popover info</h6>',
     // content: '<p class="popover_nav">Test</p>',
