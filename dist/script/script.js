@@ -208,7 +208,7 @@ const popoverListNavSm = [...popoverTriggerListSportsMedicine].map(
 
 /////////////////////////////////////////////////////////////////////////////
 //popovers over Nav links
-//path is Services -> Joint Replacement...Sports Medicine
+//path is Services -> Foot
 
 const popoverTriggerListFoot = document.querySelectorAll(
   '[data-bs-toggle="popoverFoot"]'
@@ -236,6 +236,40 @@ const popoverListNavFoot = [...popoverTriggerListFoot].map(
       placement: "left",
       title: '<h6 class="popover_title">Surgeons</h6>',
       content: htmlContentFoot,
+      html: true,
+    })
+);
+
+/////////////////////////////////////////////////////////////////////////////
+//popovers over Nav links
+//path is Services -> Hand
+
+const popoverTriggerListHand = document.querySelectorAll(
+  '[data-bs-toggle="popoverFoot"]'
+);
+
+const htmlContentHand = `
+                    <div type="button" class ="popover_nav">
+                    
+                    <ul class="popover_title">
+                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
+                    <h6>Dr. Crum</h6>
+
+                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
+                    <h6>Dr. Robinson</h6>
+
+                    </ul>
+                    
+                  </div>
+
+  
+  `;
+const popoverListNavHand = [...popoverTriggerListHand].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      placement: "left",
+      title: '<h6 class="popover_title">Surgeons</h6>',
+      content: htmlContentHand,
       html: true,
     })
 );
