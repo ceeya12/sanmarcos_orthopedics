@@ -72,12 +72,12 @@
 
 <body>
 
-
+    <!-- Header start with navi bar -->
     <header class="sticky-top">
 
         <!-- First container with Company logo and navbar buttons -->
 
-        <nav class="navbar navbar-expand-lg bg-white" style="font-size: large;">
+        <nav class="navbar navbar-expand-lg bg-white" style="font-size: large; font-weight: 700;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -113,8 +113,8 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="georgemundanthanum.html">Dr. Mundanthenum</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="georgemundanthanum.html">Dr.
+                                            Mundanthenum</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -131,53 +131,95 @@
                                 <ul class="dropdown-menu" style="background-color: #7294BB;">
 
                                     <li>
-                                        <span id="myPopover" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
-                                            data-bs-placement="left">
-                                            <a href="#" class="dropdown-item">Joint Replacement</a>
-                                            <a data-bs-content="test" href=""></a>
+                                        <span id="myPopoverSportsMedicine" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popoverNav" data-bs-trigger="hover focus"
+                                            data-bs-placement="left" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js">
 
+                                            <a href="#" class="dropdown-item">Joint Replacement</a>
                                         </span>
 
                                     </li>
                                     <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Sports Medicine</a></li>
+                                    <li>
+
+                                        <span id="myPopoverSportsMedicine" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popoverSm" data-bs-trigger="hover focus"
+                                            data-bs-placement="left" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js">
+
+                                            <a href="#" class="dropdown-item">Sports Medicine</a>
+                                        </span>
+
+                                    </li>
+
                                     <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Foot and Ankle</a></li>
+                                    <li>
+                                        <span id="myPopoverFoot" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popoverFoot" data-bs-trigger="hover focus"
+                                            data-bs-placement="left" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js">
+
+                                            <a href="#" class="dropdown-item">Foot and Ankle</a>
+                                        </span>
+
+
+
+                                    </li>
                                     <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Hand</a></li>
+                                    <li>
+                                        <span id="myPopoverHand" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popoverHand" data-bs-trigger="hover focus"
+                                            data-bs-placement="left" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js">
+
+                                            <a href="#" class="dropdown-item">Hand</a>
+                                        </span>
+
+
+                                    </li>
                                     <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Fracture Care</a></li>
-                                </ul>
+
+                                    <li>
+                                        <span id="myPopoverFracture" class="d-inline-block" tabindex="0"
+                                            data-bs-toggle="popoverFracture" data-bs-trigger="hover focus"
+                                            data-bs-placement="left" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js">
+
+                                            <a href="#" class="dropdown-item">Fracture Care</a>
+                                        </span>
+                                    </li>
+
                             </li>
+                        </ul>
 
 
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Patient Info</a>
-                                <ul class="dropdown-menu" style="background-color: #7294BB;">
-                                    <li><a href="#" class="dropdown-item">First Visit Guide</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Post Op Instructions</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Insurance Information</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Patient Medical Records Request</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a href="#" class="dropdown-item">Online Bill Pay</a></li>
-                                </ul>
-                            </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Patient Info</a>
+                            <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                <li><a href="#" class="dropdown-item">First Visit Guide</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a href="#" class="dropdown-item">Post Op Instructions</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a href="#" class="dropdown-item">Insurance Information</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a href="#" class="dropdown-item">Patient Medical Records Request</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a href="#" class="dropdown-item">Online Bill Pay</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Appointments</a>
-                                <ul class="dropdown-menu" style="background-color: #7294BB;">
-                                    <li><a href="online_form_appointment.html" class="dropdown-item">General
-                                            Appointment</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Appointments</a>
+                            <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                <li><a href="online_form_appointment.html" class="dropdown-item">General
+                                        Appointment</a></li>
 
-                                </ul>
-                            </li>
+                            </ul>
+                        </li>
 
                         </ul>
                     </div>
@@ -185,34 +227,36 @@
             </div>
         </nav>
 
-        <div class="row" style="background-color: #294c74">
-            <div class="col">
-                <a href="#" style="text-decoration: none;">
-                    <span class="badge rounded-pill text-bg-light"
-                        style="margin-left: 10px; margin-top: 12px; width: 12rem; font-size: medium;">Online
-                        Bill Pay
-                    </span>
-                </a>
-                <a href="#" style="text-decoration: none;">
+        <div class="container-fluid" style="background-color: #294c74">
+            <div class="row">
+                <div class="col">
+                    <a href="#" style="text-decoration: none;">
+                        <span class="badge rounded-pill text-bg-light"
+                            style="margin-left: 10px; margin-top: 12px; width: 12rem; font-size: medium;">Online
+                            Bill Pay
+                        </span>
+                    </a>
                     <span class="header_phone">
-
-                        <i class="fas fa-phone"></i>
-                        (512)-878-4203
+                        <a href="tel:5128784203" style="color: white; text-decoration: none;">
+                            <i class="fas fa-phone"></i>
+                            (512)-878-4203
+                        </a>
                     </span>
-                </a>
 
-            </div>
+                </div>
 
-            <div class="col d-flex justify-content-end">
-                <form id="search-form" class="d-flex p-2" style="width: 375px;" name="search" role="search">
-                    <input id="search" name="search" type="search" class="form-control me-2" placeholder="Search">
-                    <button id="searchBtn" class="btn btn-outline-light" type="submit">SEARCH</button>
+                <div class="col d-flex justify-content-end">
+                    <form id="search-form" class="d-flex p-2" style="width: 375px;" name="search" role="search">
+                        <input id="search" name="search" type="search" class="form-control me-2" placeholder="Search">
+                        <button id="searchBtn" class="btn btn-outline-light" type="submit">SEARCH</button>
 
-                </form>
+                    </form>
 
+                </div>
             </div>
         </div>
     </header>
+
 
     <section class="container-fluid">
         <div class="row-cols-2 d-flex justify-content-center">
@@ -458,153 +502,145 @@
 
     <!-- footer starts at this point  -->
 
+    <footer id="content" class="container-fluid">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
 
-    <footer id="content" style="border-top: solid black;">
+                                <h4>Find Us</h4>
+                                <span>1310 Wonder World Drive, Suite 115, <br> San Marcos, Texas 78666</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call Us</h4>
+                                <span>(512)878-4203</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- footer starts at this point  -->
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="fas fa-fax alt"></i>
+                            <div class="cta-text">
+                                <h4>Fax Us</h4>
+                                <span>(512)878-4209</span>
+                            </div>
 
-        <div class="container-fluid">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+
+                                <h4>Mail Us</h4>
+                                <span><a href="mailto:sanmarcosorthopedics.com">sanmarcosorthopedics@outlook.com</a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html" class="d-flex justify-content-center">
+                                    <img src="images/smo_logos/smo_footer_logo_1.png" alt="san marcos orthopedics">
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p style="font-weight: 600; color: black;">
+                                    Our experienced medical professionals put your healing needs first. We are
+                                    proud to
+                                    provide a high quality level of
+                                    customer service, medical experience, and commitment to health and wellness to
+                                    all
+                                    our patients. Our goal is to make you
+                                    feel better as quickly as possible.
+
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://m.facebook.com/p/San-Marcos-Orthopedics-100066305811594/">
+                                    <i class="fab fa-facebook-f facebook-bg"></i>
+                                </a>
+                                <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="#">Our Surgeons</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Patient Info</a></li>
+                                <li><a href="online_form_appointment.html">Appointments</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our news feed, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input class="form-control" type="text" placeholder="Email Address">
+                                    <button class="btn"><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
             <div class="container">
-                <div class="footer-cta pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="single-cta">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="cta-text">
-
-                                    <h4>Find Us</h4>
-                                    <span>1310 Wonder World Drive, Suite 115, <br> San Marcos, Texas 78666</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single-cta">
-                                <i class="fas fa-phone"></i>
-                                <div class="cta-text">
-                                    <h4>Call Us</h4>
-                                    <span>(512)878-4203</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <div class="single-cta">
-                                <i class="fas fa-fax alt"></i>
-                                <div class="cta-text">
-                                    <h4>Fax Us</h4>
-                                    <span>(512)878-4209</span>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="single-cta">
-                                <div class="cta-text">
-                                    <i class="far fa-envelope-open"></i>
-                                    <h4>Mail Us</h4>
-                                    <span><a href="mailto:sanmarcosorthopedics.com">sanmarcosorthopedics@outlook.com</a>
-                                    </span>
-
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, San Marcos Orthopedics All Rights Reserved</p>
                         </div>
                     </div>
-                </div>
-                <div class="footer-content pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 mb-50">
-                            <div class="footer-widget">
-                                <div class="footer-logo">
-                                    <a href="index.html" class="d-flex justify-content-center">
-                                        <img src="images/smo_logos/smo_footer_logo_1.png" alt="san marcos orthopedics">
-
-                                    </a>
-                                </div>
-                                <div class="footer-text">
-                                    <p style="font-weight: 600; color: black;">
-                                        Our experienced medical professionals put your healing needs first. We are
-                                        proud to
-                                        provide a high quality level of
-                                        customer service, medical experience, and commitment to health and wellness to
-                                        all
-                                        our patients. Our goal is to make you
-                                        feel better as quickly as possible.
-
-                                    </p>
-                                </div>
-                                <div class="footer-social-icon">
-                                    <span>Follow us</span>
-                                    <a href="https://m.facebook.com/p/San-Marcos-Orthopedics-100066305811594/">
-                                        <i class="fab fa-facebook-f facebook-bg"></i>
-                                    </a>
-                                    <!-- <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="aboutus.html">About Us</a></li>
-                                    <li><a href="#">Our Surgeons</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Patient Info</a></li>
-                                    <li><a href="online_form_appointment.html">Appointments</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Subscribe</h3>
-                                </div>
-                                <div class="footer-text mb-25">
-                                    <p>Don’t miss to subscribe to our news feed, kindly fill the form below.</p>
-                                </div>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input class="form-control" type="text" placeholder="Email Address">
-                                        <button class="btn"><i class="fab fa-telegram-plane"></i></button>
-                                    </form>
-                                </div>
-                            </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                            <div class="copyright-text">
-                                <p>Copyright &copy; 2023, San Marcos Orthopedics All Rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
 
-    </footer>
 
+    </footer>
 
 
 
