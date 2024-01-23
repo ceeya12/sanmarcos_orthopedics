@@ -245,7 +245,7 @@ const popoverListNavFoot = [...popoverTriggerListFoot].map(
 //path is Services -> Hand
 
 const popoverTriggerListHand = document.querySelectorAll(
-  '[data-bs-toggle="popoverFoot"]'
+  '[data-bs-toggle="popoverHand"]'
 );
 
 const htmlContentHand = `
