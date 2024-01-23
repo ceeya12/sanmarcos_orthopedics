@@ -298,7 +298,7 @@ const htmlContentFracture = `
 
   
   `;
-const popoverListNavFracture = [...popoverTriggerListHand].map(
+const popoverListNavFracture = [...popoverTriggerListFractureCare].map(
   (popoverTriggerEl) =>
     new bootstrap.Popover(popoverTriggerEl, {
       placement: "left",
