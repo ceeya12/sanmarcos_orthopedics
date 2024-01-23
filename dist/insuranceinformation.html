@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Appointment Booking | SM Orthopedics</title>
+
+    <meta name="Description" content="...">
+    <title>Insurance Information | SM Orthopedics </title>
+
+    <!-- Bootstrap dependency-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Font Awesome & Icons
-        
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,500;1,600&family=Nunito:wght@500;1000&family=Righteous&family=Saira:ital,wght@1,600&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/6f3598bd12.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -20,21 +26,21 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
 
-    <!--Google Maps-->
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="/style_sheets/style.css" />
+    <!--Google Maps
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <script type="module" src="./index.js"></script> -->
 
-    <!-- fuse js -->
+    <!-- Stryker content -->
+    <!-- <script defer src="https://d2ybmd3wevur4k.cloudfront.net/mako_total_hip_replacement_video/code.js"></script>
+    <script defer src="https://d2ybmd3wevur4k.cloudfront.net/mako_total_knee_replacement_video/code.js"></script> -->
 
-    <script async src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/smo_logos/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/smo_logos/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/smo_logos/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/smo_logos/favicon_io/site.webmanifest">
 
-
-
-    <script async type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <!--Script Files needed-->
     <!--Bootstrap-->
     <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -44,19 +50,19 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
 
+    <!--Script Files needed-->
     <!-- MDB -->
     <script async type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
-
-
-
+    <!--Fuse-->
+    <script async src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
 
     <!--My Script File-->
-    <script async src="/script/appointmentOnline.js"></script>
-
+    <script async src="/script/script.js"></script>
 
     <!-- My CSS style Sheet-->
     <link rel="stylesheet" href="/css/style.css">
+
 
 </head>
 
@@ -251,278 +257,6 @@
     </header>
 
 
-    <section class="container-fluid">
-        <div class="row-cols-2 d-flex justify-content-center">
-
-            <div class="modal_custom hidden_all container-fluid">
-                <button class="close-modal">&times;</button>
-                <h3 class="d-flex justify-content-center" style="text-decoration: underline;">Search Results:</h3>
-                <div class="col-sm-4" id="search-results" aria-label="search results"></div>
-            </div>
-        </div>
-        <div class="overlay hidden_all"></div>
-
-    </section>
-
-
-
-    <!-- container for modal -->
-    <div class="container-fluid">
-
-        <div class="modal_custom hidden_all">
-            <button class="close-modal">&times;</button>
-            <h2>Search Results:</h2>
-            <div id="search-results" aria-label="search results">
-
-            </div>
-        </div>
-
-        <div class="overlay hidden_all"></div>
-
-        <!-- container above appointment form -->
-
-    </div>
-
-    <div class="container-fluid">
-        <div class="row banner_form">
-            <h3>Appointment Request</h3>
-        </div>
-    </div>
-
-
-    <!-- container for form online appointment -->
-
-    <section style="margin-bottom: 40px;">
-        <div class="container-fluid" style="margin-top: 30px;">
-            <div class="row d-flex justify-content-center">
-                <p class="d-flex justify-content-center">Note: Online forms are only
-                    for general appointments/inquiries. </p>
-                <p class="d-flex justify-content-center"> Please do not submit any
-                    medical questions or your personal health information.
-                </p>
-
-                <form id="submission" name="submission">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-3 form-group required">
-                            <label class="control-label" for="firstName" type="text" value=""> First
-                                Name:</label>
-                            <input id="firstName" type="firstName" class="form-control bg_form_input form_invalid"
-                                required>
-                        </div>
-                        <div class="col-sm-3 form-group required">
-                            <label class="control-label" for="lastName"> Last Name:</label>
-                            <input id="lastName" type="lastName" class="form-control bg_form_input" required>
-                        </div>
-
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-3 form-group required">
-                            <label class="control-label" for="mobileNumber"> Mobile Number:</label>
-                            <input id="mobileNumber" name="contact_number" class="form-control bg_form_input"
-                                pattern="^\d{10}$" required>
-                        </div>
-                        <div class="col-sm-3 form-group required">
-                            <label class="control-label" for="email"> Email:</label>
-                            <input id="email" type="email" class="form-control bg_form_input" required>
-                        </div>
-
-                    </div>
-
-                    <div class="row" style="justify-content: center;">
-                        <div class="col-sm-6">
-                            <label for="Injury Details"> Injury Details:</label>
-                            <textarea class="form-control bg_form_input" name="injuryDetails" id="injuryDetails"
-                                cols="115" rows="5"></textarea>
-
-                        </div>
-
-
-                    </div>
-
-                    <!-- Form section for user to select preferred doctor -->
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-3">
-                            <label for="preferred doctor"> Preferred Doctor:</label>
-                            <select id="surgeonSelect" type="firstName" class="form-select bg_form_input">
-                                <option value="">Choose Your Doctor:</option>
-                                <option value="Dr. Joshua Crum">Dr. Joshua Crum</option>
-                                <option value="Dr. Mark McDonnell">Dr. Mark McDonnell</option>
-                                <option value="Dr. George Mundanthanum">Dr. George Mundanthanum</option>
-                                <option value="Dr. John D. Robinson">Dr. John D. Robinson</option>
-                                <option value="Dr. Aseem Saini">Dr. Aseem Saini</option>
-                            </select>
-
-                        </div>
-                        <div class="col-sm-3">
-                            <label for="lastName"> Preferred Location:</label>
-                            <select class="form-select bg_form_input" name="" id="locationChoice">
-                                <option value="">Choose Location:</option>
-                                <option value="San Marcos, TX">San Marcos, TX</option>
-                                <option value="Austin, TX">Austin, TX</option>
-                            </select>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-
-                        <div class="col-sm-3">
-                            <label for="">Insurance Provider</label>
-                            <select name="" id="insuranceOption" class="form-select bg_form_input">
-                                <option value="">Choose your insurance:</option>
-                                <option value="Aetna">Aetna</option>
-                                <option value="BCBS TX">BCBS TX</option>
-                                <option value="Coventry">Coventry</option>
-                                <option value="Health Smart">Health Smart? PPO/HPO via IPA</option>
-                                <option value="Medicare">Medicare</option>
-                                <option value="Office">Office of Worker Comp</option>
-                                <option value="Sedgwick Claims Managment Servcies">Sedgewick Claims Management Services
-                                </option>
-                                <option value="Texas Mutual">Texas Mutual</option>
-                                <option value="Tricare Certification">Tricare Certification</option>
-                                <option value="Tricare East(Humana Military)">Tricare East(Humana Military)</option>
-                                <option value="TriWest Healthcare Allianace">TriWest Healthcare Allianace</option>
-                                <option value="SPHN(Seton Physician Hospital Network)">SPHN(Seton Physician Hospital
-                                    Network)</option>
-                                <option value="United Healthcare">United Healthcare</option>
-                                <option value="Humana">Humana</option>
-                                <option value="Cigna">Cigna</option>
-                                <option value="Multiplan-PHCS">Multiplan-PHCS</option>
-                                <option value="Oscar">Oscar</option>
-                                <option value="PHCS">PHCS</option>
-                                <option value="FirstHealth">First Health</option>
-                            </select>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <label for="">Additional Information:</label>
-                            <textarea class="form-control bg_form_input" name="" id="" cols="30" rows="1"></textarea>
-                        </div>
-                    </div>
-
-                    <!--Form section referral radio buttons -->
-                    <div class="row d-flex justify-content-center" style="margin-top: 30px;">
-
-                        <div class="col-sm-3 d-flex justify-content-evenly">
-                            <label> Do you have a current referral?</label>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input id="yesReferral" class="form-check-input" type="radio" name="referral"
-                                        value="Yes">
-                                    Yes
-                                </label>
-                            </div>
-                            <div class="form-check">
-
-                                <input class="form-check-input" type="radio" name="referral" id="noReferral"
-                                    value="No">No
-                                </label>
-                            </div>
-
-                        </div>
-
-                        <!-- Form section for patient imaging -->
-                        <div class="col-sm-3 d-flex justify-content-evenly">
-                            <label> Do you have any recent imaging?</label>
-                            <div class="form-check">
-
-                                <label class="form-check-label">
-                                    <input id="xraysYes" class="form-check-input" type="radio" name="imagingRadio"
-                                        value="Yes">Yes
-                                </label>
-                            </div>
-                            <div class="form-check-label">
-                                <label class="form-check-label">
-                                    <input id="xraysNo" class="form-check-input" type="radio" name="imagingRadio"
-                                        value="No">No</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-
-
-                        <!-- <div class="col-sm-3 d-flex justify-content-evenly">
-
-                            <label> Are You?</label>
-                            <div class="form-check">
-                                <input id="yesXrays" class="form-check-input" type="radio" name="flexRadioDefault"
-                                    autocomplete="off">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Current Patient
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input id="noXrays" class="form-check-input" type="radio" name="flexRadioDefault"
-                                    autocomplete="off">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    New Patient
-                                </label>
-                            </div>
-
-
-                        </div> -->
-
-                        <!-- <div class="col-sm-3 d-flex justify-content-evenly">
-
-                            <label> Preferred Contact Method </label>
-                            <div class="form-check">
-                                <input id="yesXrays" class="form-check-input" type="radio" name="flexRadioDefault"
-                                    autocomplete="off">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Phone
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input id="noXrays" class="form-check-input" type="radio" name="flexRadioDefault"
-                                    autocomplete="off">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Email
-                                </label>
-                            </div>
-
-
-                        </div> -->
-
-
-                    </div>
-
-                    <!-- Privacy checkbox row -->
-
-                    <div class="row form-group required" style="margin-top: 20px;">
-                        <div class="form-check d-flex justify-content-center control-label">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                We care about your privacy. By checking this box you confirm that you have read and
-                                understand our <a href="">privacy policy</a> and consent to your personal information to
-                                us.
-
-
-                            </label>
-                        </div>
-
-                    </div>
-
-                    <div class="row-cols-md-4 d-flex justify-content-center" style="margin-top: 20px;">
-                        <button id="submitBtn" class="btn btn-dark">Submit</button>
-                    </div>
-                </form>
-
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
     <!-- footer starts at this point  -->
 
     <footer id="content" class="container-fluid">
@@ -651,7 +385,7 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Home</a></li>
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
@@ -664,15 +398,6 @@
 
 
     </footer>
-
-
-
-
-
-
-
-
-
 
 
 </body>
