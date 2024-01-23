@@ -274,6 +274,40 @@ const popoverListNavHand = [...popoverTriggerListHand].map(
     })
 );
 
+/////////////////////////////////////////////////////////////////////////////
+//popovers over Nav links
+//path is Services -> Fracture Care
+
+const popoverTriggerListFractureCare = document.querySelectorAll(
+  '[data-bs-toggle="popoverFracture"]'
+);
+
+const htmlContentFracture = `
+                    <div type="button" class ="popover_nav">
+                    
+                    <ul class="popover_title">
+                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
+                    <h6>Dr. Crum</h6>
+
+                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
+                    <h6>Dr. Robinson</h6>
+
+                    </ul>
+                    
+                  </div>
+
+  
+  `;
+const popoverListNavFracture = [...popoverTriggerListHand].map(
+  (popoverTriggerEl) =>
+    new bootstrap.Popover(popoverTriggerEl, {
+      placement: "left",
+      title: '<h6 class="popover_title">Surgeons</h6>',
+      content: htmlContentFracture,
+      html: true,
+    })
+);
+
 //////////////////////////////////////////////////////////////////////////////
 //lazy loading functionality for images
 
