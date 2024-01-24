@@ -28,6 +28,12 @@ $popover-border-color: $blueTang;
 //   overflow-x: hidden;
 // }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;

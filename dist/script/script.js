@@ -116,7 +116,6 @@ searchForm.addEventListener("submit", async function (e) {
 searchBtn.addEventListener("click", function (e) {
   e.preventDefault();
   openModal();
-  console.log(`Button Clicked`);
 });
 
 //close model event handlers
