@@ -113,10 +113,10 @@ searchForm.addEventListener("submit", async function (e) {
   searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
 });
 
-searchBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  openModal();
-});
+// searchBtn.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   openModal();
+// });
 
 //close model event handlers
 //modal button X
