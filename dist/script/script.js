@@ -85,11 +85,12 @@ async function retrieveSearchResults(query) {
 
 function generatePostHTML(post) {
   const renderHTML = `
-  <p><a href="${post.item.href}">${post.item.surgeon}</a></p>
-  <p class="center_search_content">${post.item.phonenumber}</p>
-  <a href="online_form_appointment.html">
-  <p class="center_search_content">${post.item.email}</p>
-  </a>
+      <div class="adjustment">
+      <h3><a href="${post.item.href}">${post.item.surgeon}</a></h3>
+      <p>${post.item.phonenumber}</p>
+      <a class="btn" href="${post.item.href}">View Profile</a>
+      </div>
+
   `;
 
   return renderHTML;
@@ -99,7 +100,7 @@ function generatePostHTML(post) {
 //Disable Scrolling during search input from
 //event listeners
 
-searchForm.addEventListener("input", async function (e) {
+searchForm.addEventListener("submit", async function (e) {
   e.preventDefault();
   openModal();
   disableScroll();
