@@ -5773,13 +5773,13 @@ textarea.form-control-lg {
 
 .popover {
   --bs-popover-zindex: 1070;
-  --bs-popover-max-width: 276px;
+  --bs-popover-max-width: 400px;
   --bs-popover-font-size: 0.875rem;
   --bs-popover-bg: #89cff0;
-  --bs-popover-border-width: 10px;
+  --bs-popover-border-width: 8px;
   --bs-popover-border-color: #294c74;
   --bs-popover-border-radius: var(--bs-border-radius-lg);
-  --bs-popover-inner-border-radius: calc(var(--bs-border-radius-lg) - 10px);
+  --bs-popover-inner-border-radius: calc(var(--bs-border-radius-lg) - 8px);
   --bs-popover-box-shadow: var(--bs-box-shadow);
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
@@ -5787,7 +5787,7 @@ textarea.form-control-lg {
   --bs-popover-header-color: white;
   --bs-popover-header-bg: #294c74;
   --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: 1rem;
+  --bs-popover-body-padding-y: 10px;
   --bs-popover-body-color: var(--bs-body-color);
   --bs-popover-arrow-width: 1rem;
   --bs-popover-arrow-height: 0.5rem;
@@ -11881,6 +11881,10 @@ nav {
 .popover_nav_title {
   text-align: center;
   text-decoration: underline;
+}
+
+.popover_nav_img_spacing {
+  margin-top: -10px;
 }
 
 /* Search Implementation modal window appears as user inputs seach criteria*/

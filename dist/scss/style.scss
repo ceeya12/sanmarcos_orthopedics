@@ -18,8 +18,10 @@ $breadcrumb-divider: quote(">");
 $popover-bg: #89cff0;
 $popover-header-bg: $blueTang;
 $popover-header-color: white;
-$popover-border-width: 10px;
+$popover-border-width: 8px;
 $popover-border-color: $blueTang;
+$popover-max-width: 400px;
+$popover-body-padding-y: 10px;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -54,12 +56,14 @@ nav {
   color: white;
   margin-left: 10px;
 }
-
 //nav over services link
 // popover services link
 .popover_nav_title {
   text-align: center;
   text-decoration: underline;
+}
+.popover_nav_img_spacing {
+  margin-top: -10px;
 }
 
 //////////////////////////////////////////////

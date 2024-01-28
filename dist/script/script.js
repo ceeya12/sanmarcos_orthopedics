@@ -147,24 +147,30 @@ const popoverTriggerListNav = document.querySelectorAll(
 );
 
 const htmlContent = `
-                    <div type="button" class ="popover_nav">
-                    
-                    <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Crum</h6>
-
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Robinson</h6>
-
-                    </ul>
-                    
-                  </div>
+  <div class="row">
+  <div class="col">
+  <h6 class="popver_surgeon_name">Dr. Crum</h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    
+  </div>
+  <div class="col">
+  <h6 class="popver_surgeon_name">
+  Dr. Robinson 
+  </h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    </div>
+</div>
 
   
   `;
 const popoverListNav = [...popoverTriggerListNav].map(
   (popoverTriggerEl) =>
     new bootstrap.Popover(popoverTriggerEl, {
+      container: "body",
       placement: "left",
       title: '<h6 class="popover_title">Surgeons</h6>',
       content: htmlContent,
@@ -181,18 +187,23 @@ const popoverTriggerListSportsMedicine = document.querySelectorAll(
 );
 
 const htmlContentSm = `
-                    <div type="button" class ="popover_nav">
-                    
-                    <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Crum</h6>
-
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Robinson</h6>
-
-                    </ul>
-                    
-                  </div>
+                     <div class="row">
+  <div class="col">
+  <h6 class="popver_surgeon_name">Dr. Crum</h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    
+  </div>
+  <div class="col">
+  <h6 class="popver_surgeon_name">
+  Dr. Robinson 
+  </h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    </div>
+</div>
 
   
   `;
@@ -215,18 +226,23 @@ const popoverTriggerListFoot = document.querySelectorAll(
 );
 
 const htmlContentFoot = `
-                    <div type="button" class ="popover_nav">
-                    
-                    <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Crum</h6>
-
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Robinson</h6>
-
-                    </ul>
-                    
-                  </div>
+                      <div class="row">
+  <div class="col">
+  <h6 class="popver_surgeon_name">Dr. McDonnell</h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/mm_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    
+  </div>
+  <div class="col">
+  <h6 class="popver_surgeon_name">
+  Dr. Saini 
+  </h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/mm_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    </div>
+</div>
 
   
   `;
@@ -249,18 +265,15 @@ const popoverTriggerListHand = document.querySelectorAll(
 );
 
 const htmlContentHand = `
-                    <div type="button" class ="popover_nav">
-                    
-                    <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Crum</h6>
-
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Robinson</h6>
-
-                    </ul>
-                    
-                  </div>
+<div class="row">
+  <div class="col">
+  <h6 class="popver_surgeon_name">Dr. Mundanthenum</h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/gm_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    
+  </div>
+</div>
 
   
   `;
@@ -283,18 +296,23 @@ const popoverTriggerListFractureCare = document.querySelectorAll(
 );
 
 const htmlContentFracture = `
-                    <div type="button" class ="popover_nav">
-                    
-                    <ul class="popover_title">
-                    <img src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Crum</h6>
-
-                    <img src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png" alt="doctor avatar">
-                    <h6>Dr. Robinson</h6>
-
-                    </ul>
-                    
-                  </div>
+                     <div class="row">
+  <div class="col">
+  <h6 class="popver_surgeon_name">Dr. Crum</h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    
+  </div>
+  <div class="col">
+  <h6 class="popver_surgeon_name">
+  Dr. Robinson 
+  </h6>
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      alt="doctor avatar"/>
+    </div>
+</div>
 
   
   `;
