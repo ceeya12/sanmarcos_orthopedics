@@ -239,7 +239,7 @@ const htmlContentFoot = `
   Dr. Saini 
   </h6>
     <img class="popover_nav_img_spacing"
-      src="images/doctor_headshot_images/mm_thumbnail_circular.png"
+      src="images/doctor_headshot_images/as_thumbnail_circular.png"
       alt="doctor avatar"/>
     </div>
 </div>
