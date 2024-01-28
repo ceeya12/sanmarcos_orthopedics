@@ -151,7 +151,7 @@ const htmlContent = `
   <div class="col">
   <h6 class="popver_surgeon_name">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
       alt="doctor avatar"/>
     
   </div>
@@ -160,7 +160,7 @@ const htmlContent = `
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
       alt="doctor avatar"/>
     </div>
 </div>
@@ -191,7 +191,7 @@ const htmlContentSm = `
   <div class="col">
   <h6 class="popver_surgeon_name">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
       alt="doctor avatar"/>
     
   </div>
@@ -200,7 +200,7 @@ const htmlContentSm = `
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
       alt="doctor avatar"/>
     </div>
 </div>
@@ -230,7 +230,7 @@ const htmlContentFoot = `
   <div class="col">
   <h6 class="popver_surgeon_name">Dr. McDonnell</h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/mm_thumbnail_circular.png"
+      src="images/doctor_headshot_images/mm_thumbnail_circular.png"
       alt="doctor avatar"/>
     
   </div>
@@ -239,7 +239,7 @@ const htmlContentFoot = `
   Dr. Saini 
   </h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/mm_thumbnail_circular.png"
+      src="images/doctor_headshot_images/mm_thumbnail_circular.png"
       alt="doctor avatar"/>
     </div>
 </div>
@@ -269,7 +269,7 @@ const htmlContentHand = `
   <div class="col">
   <h6 class="popver_surgeon_name">Dr. Mundanthenum</h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/gm_thumbnail_circular.png"
+      src="images/doctor_headshot_images/gm_thumbnail_circular.png"
       alt="doctor avatar"/>
     
   </div>
@@ -300,7 +300,7 @@ const htmlContentFracture = `
   <div class="col">
   <h6 class="popver_surgeon_name">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
+      src="images/doctor_headshot_images/joshua_crum_thumbnail_circular.png"
       alt="doctor avatar"/>
     
   </div>
@@ -309,7 +309,7 @@ const htmlContentFracture = `
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
+      src="images/doctor_headshot_images/jd_robinson_thumbnail_circular.png"
       alt="doctor avatar"/>
     </div>
 </div>
