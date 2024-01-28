@@ -11887,6 +11887,12 @@ nav {
   margin-top: -10px;
 }
 
+.popover_surgeon_name {
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
 /* Search Implementation modal window appears as user inputs seach criteria*/
 .close-modal {
   position: absolute;

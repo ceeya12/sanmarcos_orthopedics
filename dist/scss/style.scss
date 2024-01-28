@@ -66,6 +66,12 @@ nav {
   margin-top: -10px;
 }
 
+.popover_surgeon_name {
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
 //////////////////////////////////////////////
 /// navbar hover styling over services
 /// Implemented over the li items to provide another view box for Surgeons qualified to work on the specific service
