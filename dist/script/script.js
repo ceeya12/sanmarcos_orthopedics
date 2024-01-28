@@ -267,8 +267,8 @@ const popoverTriggerListHand = document.querySelectorAll(
 const htmlContentHand = `
 <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name single_img_thumbnail">Dr. Mundanthenum</h6>
-    <img class="popover_nav_img_spacing"
+  <h6 class="popover_surgeon_name ">Dr. Mundanthenum</h6>
+    <img class="popover_nav_img_spacing single_img_thumbnail"
       src="images/doctor_headshot_images/gm_thumbnail_circular.png"
       alt="doctor avatar"/>
     
