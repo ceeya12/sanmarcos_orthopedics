@@ -13258,6 +13258,10 @@ input.btn {
   color: white;
 }
 
+.hide_content {
+  display: none;
+}
+
 .paragraph_bio p {
   color: white;
   font-size: x-large;
@@ -15340,13 +15344,6 @@ input.btn {
 @media (max-width: 390px) {
   #marketing {
     height: 500px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .scale_video {
-    height: 400px;
-    width: 390px;
-    margin: 40px;
   }
 }
 .banner_form {

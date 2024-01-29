@@ -15262,13 +15262,6 @@ input.btn {
     height: 500px;
   }
 }
-@media screen and (max-width: 800px) {
-  .scale_video {
-    height: 400px;
-    width: 390px;
-    margin: 40px;
-  }
-}
 .banner_form {
   background-color: rgb(2, 2, 73);
   color: white;
