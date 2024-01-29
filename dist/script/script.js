@@ -596,3 +596,77 @@ initMap();
 // mobileNumber.addEventListener("input", function (e) {
 //   console.log(e.target.value);
 // });
+
+///////////////////////////////////////////////////////////////
+//individual bio pages
+//container retract and expand functionality
+
+const retractBioButton = document.getElementById("retract_bio_button");
+const entireSection = document.getElementById("entire_bio_section");
+const showViewText = document.getElementById("show_view_text_bio");
+const removeHideBio = document.getElementById("remove_hide_bio");
+const expandBioButton = document.getElementById("expand_bio_button");
+
+retractBioButton.addEventListener("click", function () {
+  entireSection.classList.add("hide_content");
+  expandBioButton.style.display = "inline";
+  removeHideBio.style.display = "none";
+  showViewText.style.display = "inline";
+  retractBioButton.classList.remove("fa-minus-circle");
+});
+
+expandBioButton.addEventListener("click", function () {
+  entireSection.classList.remove("hide_content");
+  expandBioButton.style.display = "none";
+  removeHideBio.style.display = "inline";
+  showViewText.style.display = "none";
+  retractBioButton.classList.add("fa-minus-circle");
+});
+
+//Interests Section on BioPage
+
+const retractIntButton = document.getElementById("retract_interests_button");
+const expandIntButton = document.getElementById("expand_interests_button");
+const showViewTextInt = document.getElementById("show_view_text_interests");
+const removeHideInt = document.getElementById("remove_hide_text_interests");
+const entireSectionInt = document.getElementById("entire_section_int");
+
+retractIntButton.addEventListener("click", function () {
+  entireSectionInt.classList.add("hide_content");
+  expandIntButton.style.display = "inline";
+  removeHideInt.style.display = "none";
+  showViewTextInt.style.display = "inline";
+  retractIntButton.classList.remove("fa-minus-circle");
+});
+
+expandIntButton.addEventListener("click", function () {
+  entireSectionInt.classList.remove("hide_content");
+  expandIntButton.style.display = "none";
+  removeHideInt.style.display = "inline";
+  showViewTextInt.style.display = "none";
+  retractIntButton.classList.add("fa-minus-circle");
+});
+
+//Education Section on BioPage
+
+const retractEduButton = document.getElementById("retract_edu_button");
+const expandEduButton = document.getElementById("expand_edu_button");
+const showViewTextEdu = document.getElementById("show_view_text_edu");
+const removeHideEdu = document.getElementById("remove_hide_edu");
+const entireSectionEdu = document.getElementById("entire_edu_section");
+
+retractEduButton.addEventListener("click", function () {
+  entireSectionEdu.classList.add("hide_content");
+  expandEduButton.style.display = "inline";
+  removeHideEdu.style.display = "none";
+  showViewTextEdu.style.display = "inline";
+  retractEduButton.classList.remove("fa-minus-circle");
+});
+
+expandEduButton.addEventListener("click", function () {
+  entireSectionEdu.classList.remove("hide_content");
+  expandEduButton.style.display = "none";
+  removeHideEdu.style.display = "inline";
+  showViewTextEdu.style.display = "none";
+  retractEduButton.classList.add("fa-minus-circle");
+});
