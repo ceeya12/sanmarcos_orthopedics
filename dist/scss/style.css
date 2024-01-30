@@ -12006,6 +12006,16 @@ nav {
 
 .popover_nav_img_spacing {
   margin-top: -10px;
+  border-radius: 10px;
+}
+
+.white_it_out {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.image_thumbnail_nav {
+  margin-left: 8px;
 }
 
 .popover_surgeon_name {
@@ -12470,10 +12480,6 @@ footer {
   padding: 10px;
 }
 
-.white_it_out {
-  color: white;
-}
-
 ul {
   margin: 0px;
   padding: 0px;
@@ -12707,6 +12713,12 @@ h4,
 .circular_img_adjust {
   height: 10px;
   width: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
 /* ---BIOPAGE version 2 ---*/

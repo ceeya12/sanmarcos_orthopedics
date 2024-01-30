@@ -12601,6 +12601,12 @@ h4,
   width: 10px;
 }
 
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
 /* ---BIOPAGE version 2 ---*/
 /* ---Standard headers ---*/
 /* --- General Layout Settings---*/
