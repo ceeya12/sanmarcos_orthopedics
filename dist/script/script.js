@@ -490,28 +490,28 @@ const popoverListAseem = [...popoverTriggerListHeadshotAseem].map(
 const counters = document.querySelectorAll(".counter");
 const containerDoctorCount = document.getElementById("counterBox");
 
-// containerDoctorCount.addEventListener("mouseenter", function () {
-//   //loop to iterate through each number and display value
+containerDoctorCount.addEventListener("mouseenter", function () {
+  //loop to iterate through each number and display value
 
-//   counters.forEach((counter) => {
-//     const updateCount = () => {
-//       const target = +counter.getAttribute("data-target");
-//       const count = +counter.innerText;
-//       const increment = 1;
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+      const increment = 1;
 
-//       // console.log(increment);
+      // console.log(increment);
 
-//       if (count < target) {
-//         counter.innerText = count + increment;
-//         setTimeout(updateCount, 100);
-//       } else {
-//         counter.innerText = target;
-//       }
-//     };
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 100);
+      } else {
+        counter.innerText = target;
+      }
+    };
 
-//     updateCount();
-//   });
-// });
+    updateCount();
+  });
+});
 
 ((g) => {
   var h,
