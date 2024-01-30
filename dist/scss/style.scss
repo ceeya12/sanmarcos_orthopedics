@@ -64,6 +64,16 @@ nav {
 }
 .popover_nav_img_spacing {
   margin-top: -10px;
+  border-radius: 10px;
+}
+
+.white_it_out {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.image_thumbnail_nav {
+  margin-left: 8px;
 }
 
 .popover_surgeon_name {
@@ -591,10 +601,6 @@ footer {
   background-position: top;
   position: relative;
   padding: 10px;
-}
-
-.white_it_out {
-  color: white;
 }
 
 ul {
