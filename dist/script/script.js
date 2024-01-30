@@ -575,7 +575,7 @@ async function initMap() {
   });
 }
 
-// initMap();
+initMap();
 
 ///////////////////////////////////////////////////////////////
 //Appointment form request submission
