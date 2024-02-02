@@ -5563,6 +5563,33 @@ tr:nth-child(odd) {
 }
 
 ///////////////////////////////////////////////////////////////////////
+/// PATIENT INFO
+/// insuranceinformation.html
+
+@media screen and (max-width: 500px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .insurance_table {
+    margin-bottom: 200px;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
 /// Form for appointment booking
 /// appointment.html
 

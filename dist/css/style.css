@@ -15352,6 +15352,26 @@ tr:nth-child(odd) {
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .insurance_table {
+    margin-bottom: 200px;
+  }
+}
 .banner_form {
   background-color: rgb(2, 2, 73);
   color: white;
