@@ -259,55 +259,367 @@
         </div>
     </header>
 
+    <!--Hidden Search Window for search Results-->
+    <section class="container-fluid">
+        <div class="row-cols-2 d-flex justify-content-center">
+
+            <div class="modal_custom hidden_all container-fluid">
+                <button class="close-modal">&times;</button>
+                <h3 class="d-flex justify-content-center" style="text-decoration: underline;">Search Results:</h3>
+                <div class="col-sm-4" id="search-results" aria-label="search results"></div>
+            </div>
+        </div>
+        <div class="overlay hidden_all"></div>
+
+    </section>
 
     <!-- Main Layout -->
-    <div id="content">
-        <div class="page-banner phys-banner">
-            <div class="my_container">
-                <div class="physician-right">
-                    <h1 style="font-weight: 700">FIRST VISIT GUIDE</h1>
-                </div>
-                <div class="clear"></div>
-            </div>
+    <div class="container-fluid">
+        <div class="row custom_banner">
+            <h2>FIRST VISIT GUIDE</h2>
         </div>
+    </div>
 
-        <div class="container-fluid">
-            <div class="block-title"></div>
-
-            <div class="row">
-                <p class="d-flex justify-content-center">When you come for your appointment, please bring the following
+    <div class="container-fluid d-flex justify-content-center container_table">
+        <div class="row">
+            <div class="text_first_visit">
+                <p>
+                    When you come for your appointment, <br />please bring the
+                    following:
                 </p>
-                <div class="d-flex justify-content-center">
+            </div>
+            <div class="table_fix_up">
+                <table>
+                    <tr style="background: #7294bb">
+                        <td>IMPORTANT ITEMS</td>
+                    </tr>
+                    <tr>
+                        <td>• Driver&apos;s License or a valid ID</td>
+                    </tr>
+                    <tr>
+                        <td>• Insurance Information</td>
+                    </tr>
+                    <tr>
+                        <td>• Referral Letter &lpar;if required&rpar;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            • Reports, X-rays, MRIs, CT scans, etc. and any other relevant
+                            information
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>• List of Medications &lpar;if required&rpar;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
-                    <table>
-                        <tr>
-                            <td>Driver's License or Valid ID</td>
-                        </tr>
-                        <tr>
-                            <td>Insurance Information</td>
-                        </tr>
-                        <tr>
-                            <td>Referral Letter &lpar; if required &rpar;</td>
-                        </tr>
-                        <tr>
-                            <td>Reports, X-rays, MRI's, CT scans, etc. and any other relevant information</td>
-                        </tr>
-                        <tr>
-                            <td>List of medications &lpar; if any &rpar;</td>
-                        </tr>
+    <!-- Dr. Crums Forms -->
+    <div class="container-fluid container_forms">
+        <div class="row mt-5">
+            <h2 style="
+                    background-color: #7294bb;
+                    width: fit-content;
+                    margin-left: 20px;
+                  ">
+                Dr. Crum&apos;s Forms
+            </h2>
+        </div>
 
-                    </table>
-
+        <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">Consent</h5>
+                        <p class="card-text text-center">Patient Consent Form</p>
+                        <!-- <a href="link/to/your/download/file" download="filename">Download link</a> -->
+                        <a href="/patient_forms/crum_forms/CONSENT FORM.doc" download="CONSENT FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
                 </div>
-
             </div>
 
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Financial
+                        </h5>
+                        <p class="card-text text-center">Financial Policy Form</p>
+                        <a href="/patient_forms/crum_forms/FINANCIAL POLICY.docx" download="FINANCIAL POLICY.docx"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            H &amp; P FORM
+                        </h5>
+                        <p class="card-text text-center">History and Physical Form</p>
+                        <a href="/patient_forms/crum_forms/H&P FORM.doc" download="H&P FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Onset Injury
+                        </h5>
+                        <p class="card-text text-center">Onset Injury Details</p>
+                        <a href="/patient_forms/crum_forms/ONSET INJURY FORM.doc" download="ONSET INJURY FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Patient Details</h5>
+                        <p class="card-text text-center">Demographics Form</p>
+                        <a href="/patient_forms/crum_forms/PATIENT DEMOGRAPHICS.xls" download="PATIENT DEMOGRAPHICS.xls"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="block-title"></div>
+    </div>
+
+    <!-- Dr McDonnell Forms -->
+    <div class="container-fluid container_forms">
+        <div class="row mt-5">
+            <h2 style="
+                    background-color: #7294bb;
+                    width: fit-content;
+                    margin-left: 20px;
+                  ">
+                Dr. McDonnell&apos;s Forms
+            </h2>
+        </div>
+
+        <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            New Patient Packet
+                        </h5>
+                        <p class="card-text text-center">Patient Packet Form</p>
+                        <a href="/patient_forms/mcdonnell_forms/DR. MCDONNELL NEW PATIENT PACKET.pdf"
+                            download="DR. MCDONNELL NEW PATIENT PACKET.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            First Visit Guide
+                        </h5>
+                        <p class="card-text text-center">First Visit Form</p>
+                        <a href="/patient_forms/mcdonnell_forms/First Visit to San Marcos Orthopedics.pdf"
+                            download="First Visit to San Marcos Orthopedics.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dr Mundanthanum Forms -->
+    <div class="container-fluid container_forms">
+        <div class="row mt-5">
+            <h2 style="
+                    background-color: #7294bb;
+                    width: fit-content;
+                    margin-left: 20px;
+                  ">
+                Dr. Mundanthanum&apos;s Forms
+            </h2>
+        </div>
+
+        <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">Consent</h5>
+                        <p class="card-text text-center">Patient Consent Form</p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Financial
+                        </h5>
+                        <p class="card-text text-center">Financial Policy Form</p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            H &amp; P FORM
+                        </h5>
+                        <p class="card-text text-center">History and Physical Form</p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Onset Injury
+                        </h5>
+                        <p class="card-text text-center">Onset Injury Details</p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Patient Details</h5>
+                        <p class="card-text text-center">Demographics Form</p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dr. Robinson Forms -->
+    <div class="container-fluid container_forms">
+        <div class="row mt-5">
+            <h2 style="
+                    background-color: #7294bb;
+                    width: fit-content;
+                    margin-left: 20px;
+                  ">
+                Dr. Robinson&apos;s Forms
+            </h2>
+        </div>
+
+        <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">Consent</h5>
+                        <p class="card-text text-center">Patient Consent Form</p>
+                        <a href="/patient_forms/robinson_forms/CONSENT FORM.doc" download="CONSENT FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Financial
+                        </h5>
+                        <p class="card-text text-center">Financial Policy Form</p>
+                        <a href="/patient_forms/robinson_forms/FINANCIAL POLICY.docx" download="FINANCIAL POLICY.docx"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            H &amp; P FORM
+                        </h5>
+                        <p class="card-text text-center">History and Physical Form</p>
+                        <a href="/patient_forms/robinson_forms/H&P FORM.doc" download="H&P FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            Onset Injury
+                        </h5>
+                        <p class="card-text text-center">Onset Injury Details</p>
+                        <a href="/patient_forms/robinson_forms/ONSET INJURY FORM.doc" download="ONSET INJURY FORM.doc"
+                            class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Patient Details</h5>
+                        <p class="card-text text-center">Demographics Form</p>
+                        <a href="/patient_forms/robinson_forms/PATIENT DEMOGRAPHICS.xls"
+                            download="PATIENT DEMOGRAPHICS.xls" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dr. Saini Forms -->
+    <div class="container-fluid container_forms">
+        <div class="row mt-5">
+            <h2 style="
+                    background-color: #7294bb;
+                    width: fit-content;
+                    margin-left: 20px;
+                  ">
+                Dr. Saini&apos;s Forms
+            </h2>
+        </div>
+
+        <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            New Patient Packet
+                        </h5>
+                        <p class="card-text text-center">Patient Packet Form</p>
+                        <a href="/patient_forms/saini_forms/DR. MCDONNELL NEW PATIENT PACKET.pdf"
+                            download="DR. MCDONNELL NEW PATIENT PACKET.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 14rem">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                            First Visit Guide
+                        </h5>
+                        <p class="card-text text-center">First Visit Form</p>
+                        <a href="/patient_forms/saini_forms/First Visit to San Marcos Orthopedics.pdf"
+                            download="First Visit to San Marcos Orthopedics.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- footer starts at this point  -->
