@@ -12715,12 +12715,6 @@ h4,
   width: 10px;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
 /* ---BIOPAGE version 2 ---*/
 /* ---Standard headers ---*/
 /* --- General Layout Settings---*/
@@ -15358,6 +15352,90 @@ input.btn {
     height: 500px;
   }
 }
+.custom_banner {
+  min-height: 150px;
+  background-color: #3f5e82;
+  text-align: center;
+  line-height: 1.6em;
+  font-weight: 700;
+}
+
+.custom_banner h2, .custom_banner .h2 {
+  padding: 50px 0 0 0;
+  color: #fff;
+}
+
+.container_table {
+  min-height: 500px;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.container_table p {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.text_first_visit {
+  height: 200px;
+}
+
+.table_fix_up {
+  margin-top: -100px;
+}
+
+.table_fix_up table {
+  margin-left: 0;
+  width: 85%;
+  margin-left: 8%;
+}
+
+.table_fix_up table,
+tr {
+  font-size: larger;
+  border: 5px solid #fff;
+  text-align: center;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background: #3f5e82;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  .col_adjustment {
+    display: none;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  .col_adjustment {
+    display: none;
+  }
+}
+.container_forms {
+  min-height: 500px;
+  background-color: #3f5e82;
+  width: 75%;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+}
+
+.container_forms h2, .container_forms .h2 {
+  color: white;
+}
+
 .banner_form {
   background-color: rgb(2, 2, 73);
   color: white;

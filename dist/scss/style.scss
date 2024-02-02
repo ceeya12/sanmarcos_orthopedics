@@ -809,15 +809,6 @@ h4 {
   width: 10px;
 }
 
-////first visit guide style
-///
-
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
 ////individual bio page version 2.0
 ///
 ///
@@ -5544,11 +5535,18 @@ tr:nth-child(odd) {
   .card {
     margin-bottom: 20px;
   }
+  .col_adjustment {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1500px) {
   .card {
     margin-bottom: 20px;
+  }
+
+  .col_adjustment {
+    display: none;
   }
 }
 
