@@ -15372,6 +15372,82 @@ tr:nth-child(odd) {
     margin-bottom: 200px;
   }
 }
+.container_patient_request {
+  height: 500px;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.container_patient_request p {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  margin: 100px 65px 0 65px;
+}
+
+.pill_container {
+  display: flex;
+  justify-content: center;
+}
+
+.pill_contact {
+  margin: 25px;
+}
+
+.pill_contact a {
+  color: #294c74;
+}
+
+@media screen and (max-width: 500px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    width: 75%;
+  }
+  .container_patient_request p {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
 .banner_form {
   background-color: rgb(2, 2, 73);
   color: white;
