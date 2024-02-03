@@ -4743,7 +4743,7 @@ textarea.form-control-lg {
 .badge {
   --bs-badge-padding-x: 0.65em;
   --bs-badge-padding-y: 0.35em;
-  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-size: calc(1.275rem + 0.3vw);
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
   --bs-badge-border-radius: var(--bs-border-radius);
@@ -4757,6 +4757,11 @@ textarea.form-control-lg {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+}
+@media (min-width: 1200px) {
+  .badge {
+    --bs-badge-font-size: 1.5rem;
+  }
 }
 .badge:empty {
   display: none;
