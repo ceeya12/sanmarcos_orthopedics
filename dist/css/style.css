@@ -4743,7 +4743,7 @@ textarea.form-control-lg {
 .badge {
   --bs-badge-padding-x: 0.65em;
   --bs-badge-padding-y: 0.35em;
-  --bs-badge-font-size: calc(1.275rem + 0.3vw);
+  --bs-badge-font-size: 0.75em;
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
   --bs-badge-border-radius: var(--bs-border-radius);
@@ -4757,11 +4757,6 @@ textarea.form-control-lg {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
-}
-@media (min-width: 1200px) {
-  .badge {
-    --bs-badge-font-size: 1.5rem;
-  }
 }
 .badge:empty {
   display: none;
@@ -15451,6 +15446,61 @@ tr:nth-child(odd) {
     border-bottom: 30px solid darkgrey;
     margin-top: 20px;
     width: 75%;
+  }
+}
+.container_patient_postop {
+  height: auto;
+  overflow: visible;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.paragraph_postop {
+  color: #fff;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.post_op_list {
+  color: #fff;
+  font-size: x-large;
+}
+
+.post_op_list li {
+  margin: 15px 35px 15px 35px;
+}
+
+.emphasized {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
   }
 }
 .banner_form {

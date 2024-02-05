@@ -14,7 +14,6 @@ $night: #03120e;
 $breadcrumb-divider: quote(">");
 
 //popover override
-
 $popover-bg: #89cff0;
 $popover-header-bg: $blueTang;
 $popover-header-color: white;
@@ -22,9 +21,6 @@ $popover-border-width: 8px;
 $popover-border-color: $blueTang;
 $popover-max-width: 400px;
 $popover-body-padding-y: 10px;
-
-//pill button text size
-$badge-font-size: 1.5rem;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -5671,6 +5667,62 @@ tr:nth-child(odd) {
     border-bottom: 30px solid darkgrey;
     margin-top: 20px;
     width: 75%;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+/// PATIENT INFO
+/// postopinstructions.html
+
+.container_patient_postop {
+  height: auto;
+  overflow: visible;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+.paragraph_postop {
+  color: #fff;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.post_op_list {
+  color: #fff;
+  font-size: x-large;
+}
+.post_op_list li {
+  margin: 15px 35px 15px 35px;
+}
+.emphasized {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
   }
 }
 
