@@ -15268,6 +15268,63 @@ input.btn {
     height: 500px;
   }
 }
+.container_joint_replacement {
+  height: auto;
+  overflow: visible;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.paragraph_joint_replace {
+  color: #fff;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.button_alignment {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20% 10px 20%;
+}
+
+.heading_fix {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.benefit_paragraph {
+  color: #fff;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.subheading_fix {
+  color: #fff;
+  text-align: center;
+  font-size: x-large;
+}
+
+.joint_replacement_list {
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .custom_banner {
   min-height: 150px;
   background-color: #3f5e82;
