@@ -12601,6 +12601,14 @@ h4,
   width: 10px;
 }
 
+.exp-status-view {
+  display: none;
+}
+
+.exp-status-hide {
+  display: inline;
+}
+
 /* ---BIOPAGE version 2 ---*/
 /* ---Standard headers ---*/
 /* --- General Layout Settings---*/
