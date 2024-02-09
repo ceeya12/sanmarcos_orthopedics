@@ -12715,6 +12715,14 @@ h4,
   width: 10px;
 }
 
+.exp-status-view {
+  display: none;
+}
+
+.exp-status-hide {
+  display: inline;
+}
+
 /* ---BIOPAGE version 2 ---*/
 /* ---Standard headers ---*/
 /* --- General Layout Settings---*/
@@ -12855,6 +12863,7 @@ input.btn {
 .page-banner h1, .page-banner .h1 {
   padding: 50px 0 0 0;
   color: #fff;
+  font-weight: 700;
 }
 
 .page-banner.image-bg h1, .page-banner.image-bg .h1 {
@@ -13271,7 +13280,7 @@ input.btn {
 .paragraph_bio p {
   color: white;
   font-size: x-large;
-  padding: 40px;
+  margin: 30px 30px 30px 20px;
 }
 
 .phys-loc-blocks .loc-hold {
@@ -15352,6 +15361,63 @@ input.btn {
     height: 500px;
   }
 }
+.container_joint_replacement {
+  height: auto;
+  overflow: visible;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.paragraph_joint_replace {
+  color: #fff;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.button_alignment {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20% 10px 20%;
+}
+
+.heading_fix {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.benefit_paragraph {
+  color: #fff;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.subheading_fix {
+  color: #fff;
+  text-align: center;
+  font-size: x-large;
+}
+
+.joint_replacement_list {
+  text-align: left;
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .custom_banner {
   min-height: 150px;
   background-color: #3f5e82;
@@ -15436,6 +15502,157 @@ tr:nth-child(odd) {
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .insurance_table {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .insurance_table {
+    margin-bottom: 200px;
+  }
+}
+.container_patient_request {
+  height: 500px;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.container_patient_request p {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  margin: 100px 65px 0 65px;
+}
+
+.pill_container {
+  display: flex;
+  justify-content: center;
+}
+
+.pill_contact {
+  margin: 25px;
+}
+
+.pill_contact a {
+  color: #294c74;
+}
+
+@media screen and (max-width: 500px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    width: 75%;
+  }
+  .container_patient_request p {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container_patient_request {
+    height: 500px;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 75%;
+  }
+}
+.container_patient_postop {
+  height: auto;
+  overflow: visible;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.paragraph_postop {
+  color: #fff;
+  font-size: x-large;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.post_op_list {
+  color: #fff;
+  font-size: x-large;
+}
+
+.post_op_list li {
+  margin: 15px 35px 15px 35px;
+}
+
+.emphasized {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container_patient_postop {
+    height: auto;
+    overflow: visible;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
 .banner_form {
   background-color: rgb(2, 2, 73);
   color: white;

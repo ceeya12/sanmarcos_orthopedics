@@ -12749,6 +12749,7 @@ input.btn {
 .page-banner h1, .page-banner .h1 {
   padding: 50px 0 0 0;
   color: #fff;
+  font-weight: 700;
 }
 
 .page-banner.image-bg h1, .page-banner.image-bg .h1 {
@@ -13165,7 +13166,7 @@ input.btn {
 .paragraph_bio p {
   color: white;
   font-size: x-large;
-  padding: 40px;
+  margin: 30px 30px 30px 20px;
 }
 
 .phys-loc-blocks .loc-hold {
