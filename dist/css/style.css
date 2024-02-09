@@ -15334,6 +15334,44 @@ input.btn {
   margin-bottom: 40px;
 }
 
+.review_gradient {
+  height: auto;
+  background-image: linear-gradient(to right, #07284e, #3f5e82);
+  border-top: solid 20px darkgrey;
+  border-bottom: solid 20px darkgrey;
+}
+
+.block_quote_text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 20px;
+}
+
+.blockquote_text_credit {
+  font-size: x-large;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote_text_credit::before {
+  content: "— ";
+}
+
+.block_quote_open_quoted::before {
+  content: "“";
+  font-size: 100px;
+  color: #fff;
+}
+
+.block_quote_close_quoted::before {
+  content: "”";
+  font-size: 100px;
+  color: #fff;
+  float: right;
+}
+
 .custom_banner {
   min-height: 150px;
   background-color: #3f5e82;

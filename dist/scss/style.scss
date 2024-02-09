@@ -5538,6 +5538,45 @@ input.btn {
   margin-bottom: 40px;
 }
 
+////about us.html page
+///
+///
+///
+.review_gradient {
+  height: auto;
+  background-image: linear-gradient(to right, #07284e, #3f5e82);
+  border-top: solid 20px darkgrey;
+  border-bottom: solid 20px darkgrey;
+}
+
+.block_quote_text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 20px;
+}
+
+.blockquote_text_credit {
+  font-size: x-large;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+.blockquote_text_credit::before {
+  content: "\2014\0020";
+}
+.block_quote_open_quoted::before {
+  content: "\201c";
+  font-size: 100px;
+  color: #fff;
+}
+.block_quote_close_quoted::before {
+  content: "\201d";
+  font-size: 100px;
+  color: #fff;
+  float: right;
+}
+
 ///////////////////////////////////////////////////////////////////////
 /// PATIENT INFO
 /// firstvisitguide.html
