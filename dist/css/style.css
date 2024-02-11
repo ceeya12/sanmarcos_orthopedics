@@ -15447,6 +15447,27 @@ input.btn {
   margin-bottom: 40px;
 }
 
+.fracture_care_heading {
+  margin: 50px 50px 0px 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.fracture_med_subheading {
+  color: #fff;
+  margin-left: 50px;
+}
+
+.fracture_med_para {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-rendering: optimizeLegibility;
+}
+
 .review_gradient {
   height: auto;
   background-image: linear-gradient(to right, #07284e, #3f5e82);
