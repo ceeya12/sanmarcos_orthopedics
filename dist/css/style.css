@@ -11874,6 +11874,10 @@ nav {
   text-wrap: nowrap;
 }
 
+nav i {
+  color: #294c74;
+}
+
 .header_phone {
   color: white;
   margin-left: 10px;
