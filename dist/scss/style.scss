@@ -50,6 +50,7 @@ body {
 nav {
   text-transform: uppercase;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 nav i {
   color: $blueTang;
