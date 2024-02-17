@@ -40,9 +40,6 @@ body {
   text-rendering: optimizeLegibility;
   width: 100%;
   overflow-x: hidden;
-  // position: relative;
-  // box-sizing: border-box;
-  // background-image: url("/Untitled.png");
 }
 
 /*-------------------------------------*/
@@ -54,6 +51,20 @@ nav {
 }
 nav i {
   color: $blueTang;
+}
+
+.icon_nav_center {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+//icons on nav bar
+@media screen and (max-width: 400px) {
+  .icon_nav_center {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .header_phone {

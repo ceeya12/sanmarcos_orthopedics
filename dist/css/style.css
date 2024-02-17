@@ -11872,12 +11872,25 @@ body {
 nav {
   text-transform: uppercase;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 nav i {
   color: #294c74;
 }
 
+.icon_nav_center {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 400px) {
+  .icon_nav_center {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 .header_phone {
   color: white;
   margin-left: 10px;
