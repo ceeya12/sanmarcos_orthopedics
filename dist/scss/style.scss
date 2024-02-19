@@ -53,6 +53,10 @@ nav i {
   color: $blueTang;
 }
 
+.nav_icons {
+  color: white;
+}
+
 .icon_nav_center {
   display: flex;
   justify-content: center;
@@ -5669,6 +5673,59 @@ input.btn {
   margin-bottom: 40px;
 }
 
+.joint_ctn_bg {
+  height: 425px;
+  background-size: cover;
+  background-image: url("/dist/images/index_page_images/joint_replacement_banner.png");
+}
+
+@media screen and (max-width: 550px) {
+  .joint_ctn_bg {
+    background-size: 390px 200px;
+    background-repeat: no-repeat;
+    background-image: url("/dist/images/index_page_images/joint_replacement_banner.png");
+    margin-bottom: -225px;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+/// Hand Care
+/// hand.html
+///
+.hand_ctn_bg {
+  height: 425px;
+  background-size: cover;
+  background-image: url("/dist/images/index_page_images/hand_banner.png");
+}
+
+@media screen and (max-width: 550px) {
+  .hand_ctn_bg {
+    background-size: 390px 200px;
+    background-repeat: no-repeat;
+    background-image: url("/dist/images/index_page_images/hand_banner.png");
+    margin-bottom: -225px;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+/// Foot and Ankle service
+/// foot.html
+///
+.foot_ctn_bg {
+  height: 425px;
+  background-size: cover;
+  background-image: url("/dist/images/index_page_images/sports_ankle_banner.png");
+}
+
+@media screen and (max-width: 550px) {
+  .foot_ctn_bg {
+    background-size: 390px 200px;
+    background-repeat: no-repeat;
+    background-image: url("/dist/images/index_page_images/sports_ankle_banner.png");
+    margin-bottom: -225px;
+  }
+}
+
 ///////////////////////////////////////////////////////////////////////
 /// Fracture Care
 /// fracturecare.html
@@ -5691,6 +5748,21 @@ input.btn {
   margin-left: 50px;
   margin-right: 50px;
   text-rendering: optimizeLegibility;
+}
+
+.fracture_ctn_bg {
+  height: 425px;
+  background-size: cover;
+  background-image: url("/dist/images/index_page_images/fracture_care_banner.png");
+}
+
+@media screen and (max-width: 550px) {
+  .fracture_ctn_bg {
+    background-size: 390px 200px;
+    background-repeat: no-repeat;
+    background-image: url("/dist/images/index_page_images/fracture_care_banner.png");
+    margin-bottom: -225px;
+  }
 }
 
 ////about us.html page
