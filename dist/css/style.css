@@ -11880,7 +11880,7 @@ nav i {
 }
 
 .nav_icons {
-  color: white;
+  color: #fff;
 }
 
 .icon_nav_center {
@@ -15471,42 +15471,42 @@ input.btn {
 .joint_ctn_bg {
   height: 425px;
   background-size: cover;
-  background-image: url("/dist/images/index_page_images/joint_replacement_banner.png");
+  background-image: url("/images/index_page_images/joint_replacement_banner.png");
 }
 
 @media screen and (max-width: 550px) {
   .joint_ctn_bg {
     background-size: 390px 200px;
     background-repeat: no-repeat;
-    background-image: url("/dist/images/index_page_images/joint_replacement_banner.png");
+    background-image: url("/images/index_page_images/joint_replacement_banner.png");
     margin-bottom: -225px;
   }
 }
 .hand_ctn_bg {
   height: 425px;
   background-size: cover;
-  background-image: url("/dist/images/index_page_images/hand_banner.png");
+  background-image: url("/images/index_page_images/hand_banner.png");
 }
 
 @media screen and (max-width: 550px) {
   .hand_ctn_bg {
     background-size: 390px 200px;
     background-repeat: no-repeat;
-    background-image: url("/dist/images/index_page_images/hand_banner.png");
+    background-image: url("/images/index_page_images/hand_banner.png");
     margin-bottom: -225px;
   }
 }
 .foot_ctn_bg {
   height: 425px;
   background-size: cover;
-  background-image: url("/dist/images/index_page_images/sports_ankle_banner.png");
+  background-image: url("/images/index_page_images/sports_ankle_banner.png");
 }
 
 @media screen and (max-width: 550px) {
   .foot_ctn_bg {
     background-size: 390px 200px;
     background-repeat: no-repeat;
-    background-image: url("/dist/images/index_page_images/sports_ankle_banner.png");
+    background-image: url("/images/index_page_images/sports_ankle_banner.png");
     margin-bottom: -225px;
   }
 }
@@ -15534,14 +15534,14 @@ input.btn {
 .fracture_ctn_bg {
   height: 425px;
   background-size: cover;
-  background-image: url("/dist/images/index_page_images/fracture_care_banner.png");
+  background-image: url("/images/index_page_images/fracture_care_banner.png");
 }
 
 @media screen and (max-width: 550px) {
   .fracture_ctn_bg {
     background-size: 390px 200px;
     background-repeat: no-repeat;
-    background-image: url("/dist/images/index_page_images/fracture_care_banner.png");
+    background-image: url("/images/index_page_images/fracture_care_banner.png");
     margin-bottom: -225px;
   }
 }
