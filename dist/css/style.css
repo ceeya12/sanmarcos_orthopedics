@@ -15471,14 +15471,14 @@ input.btn {
 .joint_ctn_bg {
   height: 425px;
   background-size: cover;
-  background-image: url("/images/index_page_images/joint_replacement_banner.png");
+  background-image: url("/images/index_page_images/joint_replacement_banner_v2.png");
 }
 
 @media screen and (max-width: 550px) {
   .joint_ctn_bg {
     background-size: 390px 200px;
     background-repeat: no-repeat;
-    background-image: url("/images/index_page_images/joint_replacement_banner.png");
+    background-image: url("/images/index_page_images/joint_replacement_banner_v2.png");
     margin-bottom: -225px;
   }
 }
