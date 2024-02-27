@@ -127,23 +127,26 @@ if (searchForm) {
 
 //close model event handlers
 //modal button X
-closeModalBtn.addEventListener("click", function () {
-  closeModal();
-  enableScroll();
-});
-//close modal event handler
-//esc key and backspace
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden_all")) {
-    closeModal();
-    enableScroll();
-  }
 
-  if (e.key === "Backspace" && !modal.classList.contains("hidden_all")) {
+if (closeModalBtn) {
+  closeModalBtn.addEventListener("click", function () {
     closeModal();
     enableScroll();
-  }
-});
+  });
+  //close modal event handler
+  //esc key and backspace
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden_all")) {
+      closeModal();
+      enableScroll();
+    }
+
+    if (e.key === "Backspace" && !modal.classList.contains("hidden_all")) {
+      closeModal();
+      enableScroll();
+    }
+  });
+}
 
 /////////////////////////////////////////////////////////////////////////////
 //popovers over Nav links
