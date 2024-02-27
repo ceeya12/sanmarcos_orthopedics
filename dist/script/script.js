@@ -100,18 +100,20 @@ function generatePostHTML(post) {
 //Disable Scrolling during search input from
 //event listeners
 
-searchForm.addEventListener("submit", async function (e) {
-  e.preventDefault();
-  openModal();
-  disableScroll();
+if (searchForm) {
+  searchForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    openModal();
+    disableScroll();
 
-  const formData = new FormData(searchForm);
-  const query = formData.get("search");
+    const formData = new FormData(searchForm);
+    const query = formData.get("search");
 
-  const postsToDisplay = await retrieveSearchResults(query);
+    const postsToDisplay = await retrieveSearchResults(query);
 
-  searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
-});
+    searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
+  });
+}
 
 // searchBtn.addEventListener("click", function (e) {
 //   e.preventDefault();
@@ -490,28 +492,30 @@ const popoverListAseem = [...popoverTriggerListHeadshotAseem].map(
 const counters = document.querySelectorAll(".counter");
 const containerDoctorCount = document.getElementById("counterBox");
 
-containerDoctorCount.addEventListener("mouseenter", function () {
-  //loop to iterate through each number and display value
+if (containerDoctorCount) {
+  containerDoctorCount.addEventListener("mouseenter", function () {
+    //loop to iterate through each number and display value
 
-  counters.forEach((counter) => {
-    const updateCount = () => {
-      const target = +counter.getAttribute("data-target");
-      const count = +counter.innerText;
-      const increment = 1;
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = 1;
 
-      // console.log(increment);
+        // console.log(increment);
 
-      if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, 100);
-      } else {
-        counter.innerText = target;
-      }
-    };
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 100);
+        } else {
+          counter.innerText = target;
+        }
+      };
 
-    updateCount();
+      updateCount();
+    });
   });
-});
+}
 
 ((g) => {
   var h,
