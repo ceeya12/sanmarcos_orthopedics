@@ -103,7 +103,7 @@ function generatePostHTML(post) {
 
 //Full text search
 //Disable Scrolling during search input from
-//event listeners
+//event listener
 
 searchForm.addEventListener("submit", async function (e) {
   e.preventDefault();
