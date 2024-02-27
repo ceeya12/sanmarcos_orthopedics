@@ -3,7 +3,7 @@
 const closeModalBtn = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal_custom");
-const searchForm = document.getElementById("search-form");
+const searchForm = document.querySelector("#search-form");
 const searchResults = document.getElementById("search-results");
 //images dom entry point for lazy loading images
 // const imgTargets = document.querySelectorAll("img[data-src]");
@@ -105,7 +105,7 @@ function generatePostHTML(post) {
 //Disable Scrolling during search input from
 //event listener
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
   searchForm.addEventListener("submit", async function (e) {
     e.preventDefault();
     openModal();
