@@ -105,7 +105,9 @@ function generatePostHTML(post) {
 //Disable Scrolling during search input from
 //event listeners
 
-if (searchForm) {
+console.log(searchForm);
+
+if (searchForm != null) {
   searchForm.addEventListener("submit", async function (e) {
     e.preventDefault();
     openModal();
