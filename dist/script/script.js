@@ -105,22 +105,18 @@ function generatePostHTML(post) {
 //Disable Scrolling during search input from
 //event listeners
 
-console.log(searchForm);
+searchForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  openModal();
+  disableScroll();
 
-if (searchForm != null) {
-  searchForm.addEventListener("submit", async function (e) {
-    e.preventDefault();
-    openModal();
-    disableScroll();
+  const formData = new FormData(searchForm);
+  const query = formData.get("search");
 
-    const formData = new FormData(searchForm);
-    const query = formData.get("search");
+  const postsToDisplay = await retrieveSearchResults(query);
 
-    const postsToDisplay = await retrieveSearchResults(query);
-
-    searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
-  });
-}
+  searchResults.innerHTML = postsToDisplay.map(generatePostHTML).join("");
+});
 
 // searchBtn.addEventListener("click", function (e) {
 //   e.preventDefault();
