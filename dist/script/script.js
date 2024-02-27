@@ -3,8 +3,8 @@
 const closeModalBtn = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal_custom");
-const searchForm = document.querySelector("#search-form");
-const searchResults = document.querySelector("#search-results");
+const searchForm = document.getElementById("search-form");
+const searchResults = document.getElementById("search-results");
 //images dom entry point for lazy loading images
 // const imgTargets = document.querySelectorAll("img[data-src]");
 
