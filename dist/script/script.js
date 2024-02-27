@@ -17,6 +17,8 @@ if (Weglot) {
   });
 }
 
+console.log(Weglot);
+
 /////////////////////////////////////////////////////////////////
 //Implementing full text search components
 //Search Implementation
