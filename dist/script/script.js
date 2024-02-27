@@ -10,9 +10,12 @@ const searchResults = document.querySelector("#search-results");
 
 /////////////////////////////////////////////////////////////////
 //weglot translate services
-Weglot.initialize({
-  api_key: "wg_f1252e6c3f441708e2a2c16c1461400c5",
-});
+
+if (Weglot) {
+  Weglot.initialize({
+    api_key: "wg_f1252e6c3f441708e2a2c16c1461400c5",
+  });
+}
 
 /////////////////////////////////////////////////////////////////
 //Implementing full text search components
