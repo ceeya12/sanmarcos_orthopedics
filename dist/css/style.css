@@ -12010,13 +12010,20 @@ nav i {
 }
 
 .doctor_block {
-  max-height: fit-content;
+  max-width: 260px;
   background-color: darkgrey;
-  max-width: 325px;
-  margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 60px;
   text-wrap: nowrap;
+  padding: 10px;
+}
+
+.headshot_heading_pic {
+  color: #294c74;
+  font-weight: bolder;
+}
+
+.headshot_subheading_pic {
+  color: #507095;
 }
 
 .image_container {
