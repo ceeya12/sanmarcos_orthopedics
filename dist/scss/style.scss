@@ -6174,3 +6174,44 @@ tr:nth-child(odd) {
   content: "*";
   color: red;
 }
+
+///////////////////////////////////////////////////////////////////////
+/// PRIVACY INFO
+/// privacy.html
+///
+/// ///////////////////////////////////////////////////////////////////////
+/// POLICY INFO
+/// POLICY.html
+.privacy_content {
+  height: fit-content;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+.privacy_content p {
+  color: #fff;
+  // text-align: center;
+  font-weight: 700;
+  font-size: large;
+  margin: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .privacy_content {
+    height: fit-content;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin: 20px;
+    max-width: fit-content;
+  }
+
+  .privacy_content p {
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    margin: 10px;
+  }
+}
