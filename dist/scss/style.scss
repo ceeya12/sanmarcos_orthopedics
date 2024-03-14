@@ -10,11 +10,8 @@ $darkSlateGray: #26403b;
 $eerieBlack: #1d201d;
 $night: #03120e;
 
-//breadcrumb divider
-$breadcrumb-divider: quote(">");
-
 //popover override
-$popover-bg: #89cff0;
+$popover-bg: #fff;
 $popover-header-bg: $blueTang;
 $popover-header-color: white;
 $popover-border-width: 8px;
@@ -22,12 +19,12 @@ $popover-border-color: $blueTang;
 $popover-max-width: 400px;
 $popover-body-padding-y: 10px;
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+$dropdown-item-padding-y: 12px;
+$dropdown-divider-margin-y: 0;
+$dropdown-border-radius: 1px;
+$dropdown-border-width: 0.5;
 
-// html,
-// body {
-//   overflow-x: hidden;
-// }
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
   padding: 0;
@@ -88,6 +85,10 @@ nav i {
 
 .white_it_out {
   color: white;
+  margin-bottom: 20px;
+}
+
+.space__down {
   margin-bottom: 20px;
 }
 
@@ -902,6 +903,27 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+@media screen and (max-width: 1400px) {
+  .single-cta i {
+    color: $blueTang;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .cta-text span {
+    color: #757575;
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 3%;
+  }
+
+  .cta-text {
+    padding-left: 15px;
+    display: block;
+    padding-bottom: 40px;
+  }
 }
 
 ////////////////////////////////////////////////////////////////
@@ -6176,12 +6198,16 @@ tr:nth-child(odd) {
 }
 
 ///////////////////////////////////////////////////////////////////////
-/// PRIVACY INFO
-/// privacy.html
+/// Terms INFO
+/// terms.html
 ///
 /// ///////////////////////////////////////////////////////////////////////
-/// POLICY INFO
-/// POLICY.html
+/// Privacy INFO
+/// privacy.html
+///
+/// /// ///////////////////////////////////////////////////////////////////////
+/// policy INFO
+/// policy.html
 .privacy_content {
   height: fit-content;
   background-color: #3f5e82;
@@ -6192,7 +6218,6 @@ tr:nth-child(odd) {
 }
 .privacy_content p {
   color: #fff;
-  // text-align: center;
   font-weight: 700;
   font-size: large;
   margin: 40px;

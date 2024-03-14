@@ -159,14 +159,14 @@ const popoverTriggerListNav = document.querySelectorAll(
 const htmlContent = `
   <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">Dr. Crum</h6>
+  <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
       alt="doctor avatar"/>
     
   </div>
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">
+  <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing image_thumbnail_nav"
@@ -199,14 +199,14 @@ const popoverTriggerListSportsMedicine = document.querySelectorAll(
 const htmlContentSm = `
                      <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">Dr. Crum</h6>
+  <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
       alt="doctor avatar"/>
     
   </div>
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">
+  <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing image_thumbnail_nav"
@@ -238,14 +238,14 @@ const popoverTriggerListFoot = document.querySelectorAll(
 const htmlContentFoot = `
                       <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">Dr. McDonnell</h6>
+  <h6 class="popover_surgeon_name space__down">Dr. McDonnell</h6>
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/mm_rectangular_thumbnail.png"
       alt="doctor avatar"/>
     
   </div>
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">
+  <h6 class="popover_surgeon_name space__down">
   Dr. Saini 
   </h6>
     <img class="popover_nav_img_spacing image_thumbnail_nav"
@@ -277,7 +277,7 @@ const popoverTriggerListHand = document.querySelectorAll(
 const htmlContentHand = `
 <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">Dr. Mundanthenum</h6>
+  <h6 class="popover_surgeon_name space__down">Dr. Mundanthenum</h6>
     <img class="popover_nav_img_spacing single_img_thumbnail"
       src="images/doctor_headshot_images/gm_rectangular_thumbnail.png"
       alt="doctor avatar"/>
@@ -308,14 +308,14 @@ const popoverTriggerListFractureCare = document.querySelectorAll(
 const htmlContentFracture = `
                      <div class="row">
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">Dr. Crum</h6>
+  <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
       alt="doctor avatar"/>
     
   </div>
   <div class="col">
-  <h6 class="popover_surgeon_name white_it_out">
+  <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
     <img class="popover_nav_img_spacing image_thumbnail_nav"

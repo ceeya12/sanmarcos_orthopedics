@@ -3387,11 +3387,11 @@ textarea.form-control-lg {
   --bs-dropdown-color: var(--bs-body-color);
   --bs-dropdown-bg: var(--bs-body-bg);
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
-  --bs-dropdown-border-radius: var(--bs-border-radius);
-  --bs-dropdown-border-width: var(--bs-border-width);
-  --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+  --bs-dropdown-border-radius: 1px;
+  --bs-dropdown-border-width: 0.5;
+  --bs-dropdown-inner-border-radius: calc(1px - 0.5);
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
-  --bs-dropdown-divider-margin-y: 0.5rem;
+  --bs-dropdown-divider-margin-y: 0;
   --bs-dropdown-box-shadow: var(--bs-box-shadow);
   --bs-dropdown-link-color: var(--bs-body-color);
   --bs-dropdown-link-hover-color: var(--bs-body-color);
@@ -3400,7 +3400,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-active-bg: #0d6efd;
   --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
   --bs-dropdown-item-padding-x: 1rem;
-  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-item-padding-y: 12px;
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
@@ -4683,7 +4683,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: var(--bs-breadcrumb-item-padding-x);
   color: var(--bs-breadcrumb-divider-color);
-  content: var(--bs-breadcrumb-divider, ">") /* rtl: var(--bs-breadcrumb-divider, ">") */;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
   color: var(--bs-breadcrumb-item-active-color);
@@ -5821,7 +5821,7 @@ textarea.form-control-lg {
   --bs-popover-zindex: 1070;
   --bs-popover-max-width: 400px;
   --bs-popover-font-size: 0.875rem;
-  --bs-popover-bg: #89cff0;
+  --bs-popover-bg: #fff;
   --bs-popover-border-width: 8px;
   --bs-popover-border-color: #294c74;
   --bs-popover-border-radius: var(--bs-border-radius-lg);
@@ -12036,6 +12036,10 @@ nav i {
   margin-bottom: 20px;
 }
 
+.space__down {
+  margin-bottom: 20px;
+}
+
 .image_thumbnail_nav {
   margin-left: 8px;
 }
@@ -12132,27 +12136,32 @@ nav i {
 }
 
 .doctor_block {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  max-width: 260px;
   background-color: darkgrey;
-  max-width: 325px;
-  margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 60px;
   text-wrap: nowrap;
+  padding: 10px;
+}
+
+.headshot_heading_pic {
+  color: #294c74;
+  font-weight: bolder;
+}
+
+.headshot_subheading_pic {
+  color: #507095;
 }
 
 .image_container {
   position: relative;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  border-bottom: 10px solid #3f5e82;
-  margin-left: 110px;
 }
 
 .img_surgeon {
   height: auto;
   display: block;
+  border-bottom: 10px solid #3f5e82;
 }
 
 .overlay_image_doc {
@@ -12160,14 +12169,18 @@ nav i {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 64%;
   background-color: #7294bb;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
+.img_surgeon:hover {
+  border: solid 10px #3f5e82;
+}
+
 .image_container:hover .overlay_image_doc {
-  opacity: 0.5;
+  opacity: 0.4;
   background-color: #7294bb;
 }
 
@@ -12265,7 +12278,7 @@ nav i {
 
 .honeycomb-cell:hover::after {
   color: white;
-  background-color: #89cff0;
+  background-color: #fff;
 }
 
 .honeycomb_Hidden {
@@ -12536,6 +12549,74 @@ h1, .h1 {
   font-size: larger;
 }
 
+/*******************************
+//Container for reviews section version2
+//styling starts here for container*/
+.review_gradient {
+  height: auto;
+  background-image: linear-gradient(to right, #07284e, #3f5e82);
+  border-top: solid 20px darkgrey;
+  border-bottom: solid 20px darkgrey;
+}
+
+.block_quote_text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 20px;
+}
+
+.blockquote_text_credit {
+  font-size: x-large;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote_text_credit::before {
+  content: "— ";
+}
+
+.block_quote_open_quoted::before {
+  content: "“";
+  font-size: 100px;
+  color: #fff;
+}
+
+.block_quote_close_quoted::before {
+  content: "”";
+  font-size: 100px;
+  color: #fff;
+  float: right;
+}
+
+.adjustment_reviews {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 400px) {
+  .building_blocks {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+  }
+  .adjustment_reviews {
+    margin-top: -30px;
+  }
+  .block_quote_text {
+    font-size: 1rem;
+    line-height: 1;
+    color: #fff;
+    margin: 20px;
+  }
+  .blockquote_text_credit {
+    font-size: small;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+  }
+}
 /*
 ////////////////////////////////////////////////////
 //Footer Bar content////////////////////////////////*/
@@ -12735,6 +12816,24 @@ ul {
   color: #878787;
 }
 
+@media screen and (max-width: 1400px) {
+  .single-cta i {
+    color: #294c74;
+    float: left;
+    margin-right: 10px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 3%;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: block;
+    padding-bottom: 40px;
+  }
+}
 .surgeon_style {
   background-image: url("/surgeon_bios_img/individual_surgeon_bio.png");
   width: 75%;
@@ -15935,4 +16034,40 @@ tr:nth-child(odd) {
 .form-group.required .control-label:after {
   content: "*";
   color: red;
+}
+
+.privacy_content {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.privacy_content p {
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
+  margin: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .privacy_content {
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #3f5e82;
+    border-top: 30px solid darkgrey;
+    border-bottom: 30px solid darkgrey;
+    margin: 20px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .privacy_content p {
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    margin: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
