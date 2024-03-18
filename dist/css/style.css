@@ -11889,6 +11889,11 @@ nav i {
   font-size: 1.25rem;
 }
 
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 400px) {
   .icon_nav_center {
     display: flex;
