@@ -3345,8 +3345,8 @@ textarea.form-control-lg {
   --bs-dropdown-bg: var(--bs-body-bg);
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: 1px;
-  --bs-dropdown-border-width: 0.5;
-  --bs-dropdown-inner-border-radius: calc(1px - 0.5);
+  --bs-dropdown-border-width: 0.5px;
+  --bs-dropdown-inner-border-radius: calc(1px - 0.5px);
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-divider-margin-y: 0;
   --bs-dropdown-box-shadow: var(--bs-box-shadow);
