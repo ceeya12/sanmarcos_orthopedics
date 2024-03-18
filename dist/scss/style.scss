@@ -24,6 +24,11 @@ $dropdown-divider-margin-y: 0;
 $dropdown-border-radius: 1px;
 $dropdown-border-width: 0.5px;
 
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
@@ -58,11 +63,6 @@ nav i {
   display: flex;
   justify-content: center;
   font-size: 1.25rem;
-}
-
-.dropdown-menu {
-  margin: 0;
-  padding: 0;
 }
 
 //icons on nav bar
