@@ -157,7 +157,7 @@ const popoverTriggerListNav = document.querySelectorAll(
 );
 
 const htmlContent = `
-  <div class="row">
+  <div class="row d-flex justify-content-center">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
     <img class="popover_nav_img_spacing"
