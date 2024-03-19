@@ -12121,6 +12121,10 @@ nav i {
   transition: opacity 350ms;
 }
 
+.honeycomb-cell_title a {
+  color: #294c74;
+}
+
 .honeycomb-cell_title > small, .honeycomb-cell_title > .small {
   font-weight: 300;
   margin-top: 0.25em;

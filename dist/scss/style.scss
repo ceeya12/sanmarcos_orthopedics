@@ -312,6 +312,11 @@ nav i {
   font-size: 1.15rem;
   transition: opacity 350ms;
 }
+
+.honeycomb-cell_title a {
+  color: $blueTang;
+}
+
 .honeycomb-cell_title > small {
   font-weight: 300;
   margin-top: 0.25em;
