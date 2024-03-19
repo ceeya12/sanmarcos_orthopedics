@@ -53,6 +53,9 @@
     <!--Fuse-->
     <script async src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
 
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 
     <!-- My CSS style Sheet-->
@@ -104,26 +107,19 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Our Surgeons
                                 </a>
-                                <ul class="dropdown-menu" style="background-color: #7294BB;">
-                                    <li><a class="dropdown-item" href="joshuacrum.html">Dr. Crum</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="markmcdonnell.html">Dr. McDonnell</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="georgemundanthanum.html">Dr.
-                                            Mundanthenum</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="johndrobinson.html">Dr. Robinson</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="aseemsaini.html">Dr. Saini</a></li>
-                                </ul>
+                                <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-end dropdown-menu-sm-end"
+                                    style="background-color: #7294BB;">
+                                    <a class="dropdown-item" href="joshuacrum.html">Dr. Crum</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a class="dropdown-item" href="markmcdonnell.html">Dr. McDonnell</a></div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a class="dropdown-item" href="georgemundanthanum.html">Dr.
+                                            Mundanthenum</a></div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a class="dropdown-item" href="johndrobinson.html">Dr. Robinson</a></div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a class="dropdown-item" href="aseemsaini.html">Dr. Saini</a></div>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav_icons">
@@ -132,113 +128,113 @@
                                 </a>
                                 <a class="nav-link active dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Services</a>
-                                <ul class="dropdown-menu" style="background-color: #7294BB;">
+                                <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-end dropdown-menu-sm-end"
+                                    style="background-color: #7294BB;">
 
-                                    <li>
-                                        <span id="myPopoverSportsMedicine" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popoverNav" data-bs-trigger="hover focus"
+                                    <a id="jointReplacement" tabindex="0" data-bs-toggle="popover"
+                                        data-bs-trigger="hover" data-bs-placement="left"
+                                        data-bs-title="over ride from script.js"
+                                        data-bs-content="over ride from script.js" class="dropdown-item"
+                                        href="jointreplacement.html">Joint Replacement</a>
+
+
+                                    <div class="dropdown-divider"></div>
+                                    <div>
+
+
+
+                                        <a href="sportsmedicine.html" tabindex="0"
+                                            data-bs-toggle="popoverSportsFracture" data-bs-trigger="hover"
                                             data-bs-placement="left" data-bs-title="over ride from script.js"
-                                            data-bs-content="over ride from script.js">
+                                            data-bs-content="over ride from script.js" class="dropdown-item">Sports
+                                            Medicine</a>
 
-                                            <a href="jointreplacement.html" class="dropdown-item">Joint Replacement</a>
-                                        </span>
 
-                                    </li>
-                                    <hr class="dropdown-divider">
-                                    <li>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div>
 
-                                        <span id="myPopoverSportsMedicine" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popoverSm" data-bs-trigger="hover focus"
+                                        <a id="footAnkle" tabindex="0" data-bs-placement="left" data-bs-trigger="hover"
+                                            data-bs-toggle="popover" data-bs-title="over ride from script.js"
+                                            data-bs-content="over ride from script.js" href="footandankle.html"
+                                            class="dropdown-item">Foot and Ankle</a>
+
+
+
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div>
+
+                                        <a id="hand" tabindex="0" data-bs-toggle="popoverHand" data-bs-trigger="hover"
                                             data-bs-placement="left" data-bs-title="over ride from script.js"
-                                            data-bs-content="over ride from script.js">
+                                            data-bs-content="over ride from script.js" href="hand.html"
+                                            class="dropdown-item">Hand</a>
 
-                                            <a href="sportsmedicine.html" class="dropdown-item">Sports Medicine</a>
-                                        </span>
 
-                                    </li>
+                                    </div>
+                                    <div>
+                                        <div class="dropdown-divider"></div>
+                                    </div>
 
-                                    <hr class="dropdown-divider">
-                                    <li>
-                                        <span id="myPopoverFoot" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popoverFoot" data-bs-trigger="hover focus"
+                                    <div>
+
+
+                                        <a tabindex="0" data-bs-toggle="popoverSportsFracture" data-bs-trigger="hover"
                                             data-bs-placement="left" data-bs-title="over ride from script.js"
-                                            data-bs-content="over ride from script.js">
-
-                                            <a href="footandankle.html" class="dropdown-item">Foot and Ankle</a>
-                                        </span>
-
-
-
-                                    </li>
-                                    <hr class="dropdown-divider">
-                                    <li>
-                                        <span id="myPopoverHand" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popoverHand" data-bs-trigger="hover focus"
-                                            data-bs-placement="left" data-bs-title="over ride from script.js"
-                                            data-bs-content="over ride from script.js">
-
-                                            <a href="hand.html" class="dropdown-item">Hand</a>
-                                        </span>
+                                            data-bs-content="over ride from script.js" href="fracturecare.html"
+                                            class="dropdown-item">Fracture Care</a>
+                                    </div>
+                                </div>
+                            </li>
 
 
-                                    </li>
-                                    <hr class="dropdown-divider">
 
-                                    <li>
-                                        <span id="myPopoverFracture" class="d-inline-block" tabindex="0"
-                                            data-bs-toggle="popoverFracture" data-bs-trigger="hover focus"
-                                            data-bs-placement="left" data-bs-title="over ride from script.js"
-                                            data-bs-content="over ride from script.js">
 
-                                            <a href="fracturecare.html" class="dropdown-item">Fracture Care</a>
-                                        </span>
-                                    </li>
+                            <li class="nav-item dropdown">
+                                <a href="firstvisitguide.html" class="nav_icons">
+                                    <i style="margin-top: 10px;" class="fas fa-file-alt icon_nav_center"></i>
+                                </a>
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Patient Info</a>
+                                <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-end dropdown-menu-sm-end"
+                                    style="background-color: #7294BB;">
+                                    <div><a href="firstvisitguide.html" class="dropdown-item">First Visit Guide</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a href="postopinstructions.html" class="dropdown-item">Post Op
+                                            Instructions</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a href="insuranceinformation.html" class="dropdown-item">Insurance
+                                            Information</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a href="patientmedicalrecordsrequest.html" class="dropdown-item">Patient
+                                            Medical
+                                            Records Request</a></div>
+                                    <div class="dropdown-divider"></div>
+                                    <div><a href="onlinebillpay.html" class="dropdown-item">Online Bill Pay</a></div>
+                                </div>
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a href="https://next.paubox.com/forms/SanMarcosOrthopedics/form/b9a54cb8-8f24-4f69-8a33-cca12d592f46"
+                                    class="nav_icons">
+                                    <i style="margin-top: 10px;" class="fas fa-calendar-alt icon_nav_center"></i>
+                                </a>
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Appointments</a>
+                                <div class="dropdown-menu dropdown-menu-lg-end dropdown-menu-md-end dropdown-menu-sm-end"
+                                    style="background-color: #7294BB;">
+                                    <div><a href="https://next.paubox.com/forms/SanMarcosOrthopedics/form/b9a54cb8-8f24-4f69-8a33-cca12d592f46"
+                                            class="dropdown-item">General
+                                            Appointment</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-
-
-
-                        <li class="nav-item dropdown">
-                            <a href="firstvisitguide.html" class="nav_icons">
-                                <i style="margin-top: 10px;" class="fas fa-file-alt icon_nav_center"></i>
-                            </a>
-                            <a class="nav-link active dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown">Patient
-                                Info</a>
-                            <ul class="dropdown-menu" style="background-color: #7294BB;">
-                                <li><a href="firstvisitguide.html" class="dropdown-item">First Visit Guide</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a href="postopinstructions.html" class="dropdown-item">Post Op Instructions</a>
-                                </li>
-                                <hr class="dropdown-divider">
-                                <li><a href="insuranceinformation.html" class="dropdown-item">Insurance Information</a>
-                                </li>
-                                <hr class="dropdown-divider">
-                                <li><a href="patientmedicalrecordsrequest.html" class="dropdown-item">Patient Medical
-                                        Records Request</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a href="onlinebillpay.html" class="dropdown-item">Online Bill Pay</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a href="https://next.paubox.com/forms/SanMarcosOrthopedics/form/b9a54cb8-8f24-4f69-8a33-cca12d592f46"
-                                class="nav_icons">
-                                <i style="margin-top: 10px;" class="fas fa-calendar-alt icon_nav_center"></i>
-                            </a>
-                            <a class="nav-link active dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown">Appointments</a>
-                            <ul class="dropdown-menu" style="background-color: #7294BB;">
-                                <li><a href="https://next.paubox.com/forms/SanMarcosOrthopedics/form/b9a54cb8-8f24-4f69-8a33-cca12d592f46"
-                                        class="dropdown-item">General
-                                        Appointment</a></li>
-
-                            </ul>
-                        </li>
-
-                        </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
