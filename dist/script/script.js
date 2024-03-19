@@ -198,7 +198,7 @@ const htmlContentJointReplacement = `
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
   <a href="/dist/joshuacrum.html">
     <img class="popover_nav_img_spacing"
-      src="/dist/images/doctor_headshot_images/square_image1.png"
+      src="images/doctor_headshot_images/square_image1.png"
       alt="doctor avatar" 
     />
     </a>
@@ -209,7 +209,7 @@ const htmlContentJointReplacement = `
   </h6>
     <a href="/dist/johndrobinson.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
-      src="/dist/images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
+      src="images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
       alt="doctor avatar"
     />
     </a>
@@ -220,7 +220,7 @@ const htmlContentJointReplacement = `
   </h6>
   <a href="/dist/aseemsaini.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
-      src="/dist/images/doctor_headshot_images/as_rectangular_thumbnail.png"
+      src="images/doctor_headshot_images/as_rectangular_thumbnail.png"
       alt="doctor avatar"
     />
     </a>
