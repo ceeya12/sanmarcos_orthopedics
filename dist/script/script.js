@@ -156,7 +156,7 @@ const htmlContentJointReplacement = `
 <div class="row d-flex justify-content-center popover--ctn">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
-  <a href="/dist/joshuacrum.html">
+  <a href="joshuacrum.html">
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
       alt="doctor avatar" 
@@ -167,7 +167,7 @@ const htmlContentJointReplacement = `
   <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
-    <a href="/dist/johndrobinson.html">
+    <a href="johndrobinson.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
       src="images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
       alt="doctor avatar"
@@ -178,7 +178,7 @@ const htmlContentJointReplacement = `
   <h6 class="popover_surgeon_name space__down">
   Dr. Saini 
   </h6>
-  <a href="/dist/aseemsaini.html">
+  <a href="aseemsaini.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
       src="images/doctor_headshot_images/as_rectangular_thumbnail.png"
       alt="doctor avatar"
@@ -216,7 +216,7 @@ const htmlContentSportsFracture = `
 <div class="row d-flex justify-content-center popover--ctn">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
-  <a href="/dist/joshuacrum.html">
+  <a href="joshuacrum.html">
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
       alt="doctor avatar" 
@@ -227,7 +227,7 @@ const htmlContentSportsFracture = `
   <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
-    <a href="/dist/johndrobinson.html">
+    <a href="johndrobinson.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
       src="images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
       alt="doctor avatar"
@@ -270,7 +270,7 @@ const htmlContentFootAnkle = `
 <div class="row d-flex justify-content-center popover--ctn">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. McDonnell</h6>
-  <a href="/dist/markmcdonnell.html">
+  <a href="markmcdonnell.html">
     <img class="popover_nav_img_spacing"
       src="images/doctor_headshot_images/mm_rectangular_thumbnail.png"
       alt="doctor avatar" 
@@ -281,7 +281,7 @@ const htmlContentFootAnkle = `
   <h6 class="popover_surgeon_name space__down">
   Dr. Saini 
   </h6>
-    <a href="/dist/aseemsaini.html">
+    <a href="aseemsaini.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
       src="images/doctor_headshot_images/as_rectangular_thumbnail.png"
       alt="doctor avatar"
@@ -320,7 +320,7 @@ const htmlContentHand = `
 <div class="row">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Mundanthenum</h6>
-  <a href="/dist/georgemundanthanum.html">
+  <a href="georgemundanthanum.html">
     <img class="popover_nav_img_spacing single_img_thumbnail"
       src="images/doctor_headshot_images/gm_rectangular_thumbnail.png"
       alt="doctor avatar"/>
