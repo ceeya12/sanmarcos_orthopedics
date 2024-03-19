@@ -152,53 +152,13 @@ if (closeModalBtn) {
 //popovers over Nav links
 //path is Services -> Joint Replacement
 
-const popoverTriggerListNav = document.querySelectorAll(
-  '[data-bs-toggle="popoverNav"]'
-);
-
-const htmlContent = `
-  <div class="row d-flex justify-content-center">
-  <div class="col">
-  <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
-    <img class="popover_nav_img_spacing"
-      src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    
-  </div>
-  <div class="col">
-  <h6 class="popover_surgeon_name space__down">
-  Dr. Robinson 
-  </h6>
-    <img class="popover_nav_img_spacing image_thumbnail_nav"
-      src="images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    </div>
-</div>
-
-  
-  `;
-const popoverListNav = [...popoverTriggerListNav].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
-      container: "body",
-      placement: "left",
-      title: '<h6 class="popover_title">Surgeons</h6>',
-      content: htmlContent,
-      html: true,
-    })
-);
-
-/////////////////////////////////////////////////////////////////////////////
-//popovers over Nav links
-//path is Services -> Joint Replacement...Sports Medicine
-
 const htmlContentJointReplacement = `
 <div class="row d-flex justify-content-center popover--ctn">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
   <a href="/dist/joshuacrum.html">
     <img class="popover_nav_img_spacing"
-      src="images/doctor_headshot_images/square_image1.png"
+      src="images/doctor_headshot_images/joshua_crum_headshot_thumbnail.png"
       alt="doctor avatar" 
     />
     </a>
@@ -238,7 +198,7 @@ const popover = new bootstrap.Popover(elementJointReplacement, {
   delay: { show: 0, hide: 500 },
 });
 
-elementJointReplacement.addEventListener("shown.bs.popover", function (ev) {
+elementJointReplacement.addEventListener("shown.bs.popover", function () {
   const oldHandler = popover.hide,
     pel = $(popover.tip);
   pel.on("mouseenter", () => (popover.hide = () => 1));
@@ -250,112 +210,144 @@ elementJointReplacement.addEventListener("shown.bs.popover", function (ev) {
 
 /////////////////////////////////////////////////////////////////////////////
 //popovers over Nav links
-//path is Services -> Foot
+//path is Services -> ...Sports Medicine and Fracture Care
 
-const popoverTriggerListFoot = document.querySelectorAll(
-  '[data-bs-toggle="popoverFoot"]'
-);
-
-const htmlContentFoot = `
-                      <div class="row">
-  <div class="col">
-  <h6 class="popover_surgeon_name space__down">Dr. McDonnell</h6>
-    <img class="popover_nav_img_spacing"
-      src="images/doctor_headshot_images/mm_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    
-  </div>
-  <div class="col">
-  <h6 class="popover_surgeon_name space__down">
-  Dr. Saini 
-  </h6>
-    <img class="popover_nav_img_spacing image_thumbnail_nav"
-      src="images/doctor_headshot_images/as_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    </div>
-</div>
-
-  
-  `;
-const popoverListNavFoot = [...popoverTriggerListFoot].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
-      placement: "left",
-      title: '<h6 class="popover_title">Surgeons</h6>',
-      content: htmlContentFoot,
-      html: true,
-    })
-);
-
-/////////////////////////////////////////////////////////////////////////////
-//popovers over Nav links
-//path is Services -> Hand
-
-const popoverTriggerListHand = document.querySelectorAll(
-  '[data-bs-toggle="popoverHand"]'
-);
-
-const htmlContentHand = `
-<div class="row">
-  <div class="col">
-  <h6 class="popover_surgeon_name space__down">Dr. Mundanthenum</h6>
-    <img class="popover_nav_img_spacing single_img_thumbnail"
-      src="images/doctor_headshot_images/gm_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    
-  </div>
-</div>
-
-  
-  `;
-const popoverListNavHand = [...popoverTriggerListHand].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
-      placement: "left",
-      title: '<h6 class="popover_title">Surgeons</h6>',
-      content: htmlContentHand,
-      html: true,
-    })
-);
-
-/////////////////////////////////////////////////////////////////////////////
-//popovers over Nav links
-//path is Services -> Fracture Care
-
-const popoverTriggerListFractureCare = document.querySelectorAll(
-  '[data-bs-toggle="popoverFracture"]'
-);
-
-const htmlContentFracture = `
-                     <div class="row">
+const htmlContentSportsFracture = `
+<div class="row d-flex justify-content-center popover--ctn">
   <div class="col">
   <h6 class="popover_surgeon_name space__down">Dr. Crum</h6>
+  <a href="/dist/joshuacrum.html">
     <img class="popover_nav_img_spacing"
-      src="images/doctor_headshot_images/jc_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
-    
+      src="images/doctor_headshot_images/square_image1.png"
+      alt="doctor avatar" 
+    />
+    </a>
   </div>
   <div class="col">
   <h6 class="popover_surgeon_name space__down">
   Dr. Robinson 
   </h6>
+    <a href="/dist/johndrobinson.html">
     <img class="popover_nav_img_spacing image_thumbnail_nav"
       src="images/doctor_headshot_images/jdr_rectangular_thumbnail.png"
-      alt="doctor avatar"/>
+      alt="doctor avatar"
+    />
+    </a>
     </div>
+    
 </div>
+`;
 
-  
-  `;
-const popoverListNavFracture = [...popoverTriggerListFractureCare].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
-      placement: "left",
-      title: '<h6 class="popover_title">Surgeons</h6>',
-      content: htmlContentFracture,
-      html: true,
-    })
+const elementSportsMedicine = document.querySelectorAll(
+  '[data-bs-toggle="popoverSportsFracture"]'
 );
+
+const popoverSports = [...elementSportsMedicine].map((element) => {
+  const popover = new bootstrap.Popover(element, {
+    container: "body",
+    title: '<h6 class="popover_title">SURGEONS</h6>',
+    content: htmlContentSportsFracture,
+    html: true,
+    delay: { show: 0, hide: 500 },
+  });
+
+  element.addEventListener("shown.bs.popover", () => {
+    const oldHandler = popover.hide,
+      pel = $(popover.tip);
+    pel.on("mouseenter", () => (popover.hide = () => 1));
+    pel.on("mouseleave", () => {
+      popover.hide = oldHandler;
+      popover.hide();
+    });
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////
+//popovers over Nav links
+//path is Services -> Foot and Ankle
+
+const htmlContentFootAnkle = `
+<div class="row d-flex justify-content-center popover--ctn">
+  <div class="col">
+  <h6 class="popover_surgeon_name space__down">Dr. McDonnell</h6>
+  <a href="/dist/markmcdonnell.html">
+    <img class="popover_nav_img_spacing"
+      src="/dist/images/doctor_headshot_images/mm_rectangular_thumbnail.png"
+      alt="doctor avatar" 
+    />
+    </a>
+  </div>
+  <div class="col">
+  <h6 class="popover_surgeon_name space__down">
+  Dr. Saini 
+  </h6>
+    <a href="/dist/aseemsaini.html">
+    <img class="popover_nav_img_spacing image_thumbnail_nav"
+      src="/dist/images/doctor_headshot_images/as_rectangular_thumbnail.png"
+      alt="doctor avatar"
+    />
+    </a>
+    </div>
+    
+</div>
+`;
+
+const elementFootAnkle = document.getElementById("footAnkle");
+
+const popoverFootAnkle = new bootstrap.Popover(elementFootAnkle, {
+  container: "body",
+  title: '<h6 class="popover_title">SURGEONS</h6>',
+  content: htmlContentFootAnkle,
+  html: true,
+  delay: { show: 0, hide: 500 },
+});
+
+elementFootAnkle.addEventListener("shown.bs.popover", () => {
+  const oldHandler = popoverFootAnkle.hide,
+    pel = $(popoverFootAnkle.tip);
+  pel.on("mouseenter", () => (popoverFootAnkle.hide = () => 1));
+  pel.on("mouseleave", () => {
+    popoverFootAnkle.hide = oldHandler;
+    popoverFootAnkle.hide();
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////
+//popovers over Nav links
+//path is Services -> Hand
+
+const htmlContentHand = `
+<div class="row">
+  <div class="col">
+  <h6 class="popover_surgeon_name space__down">Dr. Mundanthenum</h6>
+  <a href="/dist/georgemundanthanum.html">
+    <img class="popover_nav_img_spacing single_img_thumbnail"
+      src="/dist/images/doctor_headshot_images/gm_rectangular_thumbnail.png"
+      alt="doctor avatar"/>
+    </a>
+  </div>
+</div>
+`;
+
+const elementHand = document.getElementById("hand");
+
+const popOverHand = new bootstrap.Popover(elementHand, {
+  container: "body",
+  title: '<h6 class="popover_title">SURGEONS</h6>',
+  content: htmlContentHand,
+  html: true,
+  delay: { show: 0, hide: 500 },
+});
+
+elementHand.addEventListener("shown.bs.popover", () => {
+  const oldHandler = popOverHand.hide,
+    pel = $(popOverHand.tip);
+  pel.on("mouseenter", () => (popOverHand.hide = () => 1));
+  pel.on("mouseleave", () => {
+    popOverHand.hide = oldHandler;
+    popOverHand.hide();
+  });
+});
 
 //////////////////////////////////////////////////////////////////////////////
 //lazy loading functionality for images
