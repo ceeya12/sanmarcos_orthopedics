@@ -15974,8 +15974,7 @@ tr:nth-child(odd) {
   font-size: x-large;
   text-align: left;
   margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 40px;
   font-weight: 700;
 }
 
