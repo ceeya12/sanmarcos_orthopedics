@@ -15857,24 +15857,30 @@ tr:nth-child(odd) {
   margin-bottom: 30px;
 }
 
+.insurance_container_table {
+  min-height: 500px;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.insurance_container_table p {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  padding: 0 50px 0 50px;
+}
+
+.insurance--info--spacing span {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 500px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .insurance_table {
-    margin-bottom: 200px;
+  .col--spacing-mobile {
+    margin: 0 15% 0 15%;
   }
 }
 .container_patient_request {
