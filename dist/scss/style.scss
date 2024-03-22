@@ -624,12 +624,15 @@ h1 {
 //   transition: transform 250ms ease-in-out;
 // }
 
+.hover-element {
+  pointer-events: none;
+}
+
 .hover-element:hover {
   border: solid 10px;
   border-color: #07284e;
   transform: scale(1.1);
   transform-origin: center;
-  pointer-events: none;
 }
 
 .popover_title {
