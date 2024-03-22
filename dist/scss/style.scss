@@ -629,6 +629,7 @@ h1 {
   border-color: #07284e;
   transform: scale(1.1);
   transform-origin: center;
+  pointer-events: none;
 }
 
 .popover_title {
