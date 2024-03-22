@@ -386,7 +386,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const popoverHeadShoJC = new bootstrap.Popover(popoverTriggerListHeadshotJc, {
     title: '<h6 class="popover_title">Top Procedures</h6>',
-    offset: [-100, -100],
     content: htmlJoshua,
     html: true,
     animation: false,
