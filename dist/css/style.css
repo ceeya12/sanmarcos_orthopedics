@@ -12386,11 +12386,6 @@ h1, .h1 {
   opacity: 0;
 }
 
-.hover-element:hover {
-  border: solid 10px;
-  border-color: #07284e;
-}
-
 .popover_title {
   text-align: center;
 }
