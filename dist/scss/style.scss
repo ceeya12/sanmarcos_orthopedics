@@ -624,10 +624,6 @@ h1 {
 //   transition: transform 250ms ease-in-out;
 // }
 
-.hover-element {
-  pointer-events: none;
-}
-
 .hover-element:hover {
   border: solid 10px;
   border-color: #07284e;
