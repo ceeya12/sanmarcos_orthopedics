@@ -389,6 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
     offset: [-100, -100],
     content: htmlJoshua,
     html: true,
+    animation: false,
   });
 });
 
@@ -416,6 +417,7 @@ document.addEventListener("DOMContentLoaded", function () {
       offset: [-100, -100],
       content: htmlMark,
       html: true,
+      animation: false,
     }
   );
 });
@@ -441,6 +443,7 @@ document.addEventListener("DOMContentLoaded", function () {
       offset: [-100, -100],
       content: htmlGeorge,
       html: true,
+      animation: false,
     }
   );
 });
@@ -471,6 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
       offset: [-100, -100],
       content: htmlJohn,
       html: true,
+      animation: false,
     }
   );
 });
@@ -496,6 +500,7 @@ document.addEventListener("DOMContentLoaded", function () {
       offset: [-100, -100],
       content: htmlAseem,
       html: true,
+      animation: false,
     }
   );
 });
