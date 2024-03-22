@@ -195,7 +195,6 @@ const popover = new bootstrap.Popover(elementJointReplacement, {
   title: '<h6 class="popover_title">SURGEONS</h6>',
   content: htmlContentJointReplacement,
   html: true,
-  delay: { show: 0, hide: 500 },
 });
 
 elementJointReplacement.addEventListener("shown.bs.popover", function () {
@@ -248,7 +247,6 @@ const popoverSports = [...elementSportsMedicine].map((element) => {
     title: '<h6 class="popover_title">SURGEONS</h6>',
     content: htmlContentSportsFracture,
     html: true,
-    delay: { show: 0, hide: 500 },
   });
 
   element.addEventListener("shown.bs.popover", () => {
@@ -299,7 +297,6 @@ const popoverFootAnkle = new bootstrap.Popover(elementFootAnkle, {
   title: '<h6 class="popover_title">SURGEONS</h6>',
   content: htmlContentFootAnkle,
   html: true,
-  delay: { show: 0, hide: 500 },
 });
 
 elementFootAnkle.addEventListener("shown.bs.popover", () => {
@@ -336,7 +333,6 @@ const popOverHand = new bootstrap.Popover(elementHand, {
   title: '<h6 class="popover_title">SURGEONS</h6>',
   content: htmlContentHand,
   html: true,
-  delay: { show: 0, hide: 500 },
 });
 
 elementHand.addEventListener("shown.bs.popover", () => {
