@@ -369,40 +369,11 @@ elementHand.addEventListener("shown.bs.popover", () => {
 
 // imgTargets.forEach((img) => imgObserver.observe(img));
 
-/////////////////////////////////////////////////////////////////////////////
-//popovers over headshots
-//headshot for surgeon -> popover
-
-const popoverTriggerListHeadShotMark = document.querySelectorAll(
-  '[data-bs-toggle="popoverMark"]'
-);
-
-const htmlMark = `<div class="popover_container">
-                <ul>
-                <li class="animation_li">Foot and ankle surgery</li>
-                <li class="animation_li">Injections, ingrown nails, wound care, diabetic care </li>
-                <li class="animation_li">Bunions, hammertoes, ankle arthroscopy, arthritis, heal pain</li>
-                <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
-                </ul>
-                </div>
-              `;
-const popoverListHeadShotMark = [...popoverTriggerListHeadShotMark].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
-      offset: [-100, -100],
-      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
-      content: htmlMark,
-      html: true,
-    })
-);
-
 //Headshot for Joshua Crum
+const popoverTriggerListHeadshotJc = document.getElementById("popOverJC");
 
-const popoverTriggerListHeadshotJc = document.querySelectorAll(
-  '[data-bs-toggle="popoverJC"]'
-);
-
-const htmlJoshua = `<div class="popover_container">
+document.addEventListener("DOMContentLoaded", function () {
+  const htmlJoshua = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Sports Medicine</li>
                 <li class="animation_li">General Orthopedics</li>
@@ -413,23 +384,48 @@ const htmlJoshua = `<div class="popover_container">
                 </ul>
                 </div>`;
 
-const popoverListJc = [...popoverTriggerListHeadshotJc].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
+  const popoverHeadShoJC = new bootstrap.Popover(popoverTriggerListHeadshotJc, {
+    title: '<h6 class="popover_title">Top Procedures</h6>',
+    offset: [-100, -100],
+    content: htmlJoshua,
+    html: true,
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////
+//popovers over headshots
+//headshot for surgeon -> popover
+
+const popoverTriggerListHeadShotMark = document.getElementById("headShotMM");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const htmlMark = `<div class="popover_container">
+                <ul>
+                <li class="animation_li">Foot and ankle surgery</li>
+                <li class="animation_li">Injections, ingrown nails, wound care, diabetic care </li>
+                <li class="animation_li">Bunions, hammertoes, ankle arthroscopy, arthritis, heal pain</li>
+                <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
+                </ul>
+                </div>
+              `;
+
+  const popoverHeadShotMD = new bootstrap.Popover(
+    popoverTriggerListHeadShotMark,
+    {
+      title: '<h6 class="popover_title">Top Procedures</h6>',
       offset: [-100, -100],
-      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
-      content: htmlJoshua,
+      content: htmlMark,
       html: true,
-    })
-);
+    }
+  );
+});
 
 //headshot for George Mundanthanum
 
-const popoverTriggerListHeadshotGeorge = document.querySelectorAll(
-  '[data-bs-toggle="popoverGeorge"]'
-);
+const popoverTriggerListHeadshotGeorge = document.getElementById("popOverGm");
 
-const htmlGeorge = `<div class="popover_container">
+document.addEventListener("DOMContentLoaded", function () {
+  const htmlGeorge = `<div class="popover_container">
                 <ul> 
                 <li class="animation_li">Hand and wrist surgery</li>
                 <li class="animation_li">Fractures and trauma of the hand and wrist</li>
@@ -438,22 +434,23 @@ const htmlGeorge = `<div class="popover_container">
                 <li class="animation_li">Microsurgery</li>
                 </ul>`;
 
-const popoverListGeorge = [...popoverTriggerListHeadshotGeorge].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
+  const popoverHeadShotGM = new bootstrap.Popover(
+    popoverTriggerListHeadshotGeorge,
+    {
+      title: '<h6 class="popover_title">Top Procedures</h6>',
       offset: [-100, -100],
-      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
       content: htmlGeorge,
       html: true,
-    })
-);
+    }
+  );
+});
 
 //Headshot for John D. Robinson
 
-const popoverTriggerListHeadshotJohn = document.querySelectorAll(
-  '[data-bs-toggle="popoverJohn"]'
-);
-const htmlJohn = `
+const popoverTriggerListHeadshotJohn = document.getElementById("popOverJr");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const htmlJohn = `
               <div class="popover_container">
                 <ul> 
                 <li class="animation_li">Sports Medicine</li>
@@ -467,23 +464,23 @@ const htmlJohn = `
                 </div>
                 `;
 
-const popoverListJohn = [...popoverTriggerListHeadshotJohn].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
+  const popoverHeadShotJR = new bootstrap.Popover(
+    popoverTriggerListHeadshotJohn,
+    {
+      title: '<h6 class="popover_title">Top Procedures</h6>',
       offset: [-100, -100],
-      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
       content: htmlJohn,
       html: true,
-    })
-);
+    }
+  );
+});
 
 //headshot index page for Aseem Saini
 
-const popoverTriggerListHeadshotAseem = document.querySelectorAll(
-  '[data-bs-toggle="popoverAseem"]'
-);
+const popoverTriggerListHeadshotAseem = document.getElementById("popOverAs");
 
-const htmlAseem = `<div class="popover_container">
+document.addEventListener("DOMContentLoaded", function () {
+  const htmlAseem = `<div class="popover_container">
                 <ul>
                 <li class="animation_li">Foot and ankle Surgery</li>
                 <li class="animation_li">Injections, ingrown nails, would care, diabetic care </li>
@@ -491,15 +488,17 @@ const htmlAseem = `<div class="popover_container">
                 <li class="animation_li">Ankle sprains, total ankle replacement, fractures of the foot/ankle</li>
                 </ul>
                 </div>`;
-const popoverListAseem = [...popoverTriggerListHeadshotAseem].map(
-  (popoverTriggerEl) =>
-    new bootstrap.Popover(popoverTriggerEl, {
+
+  const popoverHeadShotJR = new bootstrap.Popover(
+    popoverTriggerListHeadshotAseem,
+    {
+      title: '<h6 class="popover_title">Top Procedures</h6>',
       offset: [-100, -100],
-      title: "<h6 class='d-flex justify-content-center'>TOP PROCEDURES</h6>",
       content: htmlAseem,
       html: true,
-    })
-);
+    }
+  );
+});
 
 ////////////////////////////////////////////////////////////////////////
 /*Navy blue 3rd conatiner on index page */
