@@ -12389,8 +12389,6 @@ h1, .h1 {
 .hover-element:hover {
   border: solid 10px;
   border-color: #07284e;
-  transform: scale(1.1);
-  transform-origin: center;
 }
 
 .popover_title {
