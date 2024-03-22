@@ -413,7 +413,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popoverTriggerListHeadShotMark,
     {
       title: '<h6 class="popover_title">Top Procedures</h6>',
-      offset: [-100, -100],
       content: htmlMark,
       html: true,
       animation: false,
@@ -439,7 +438,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popoverTriggerListHeadshotGeorge,
     {
       title: '<h6 class="popover_title">Top Procedures</h6>',
-      offset: [-100, -100],
       content: htmlGeorge,
       html: true,
       animation: false,
@@ -470,7 +468,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popoverTriggerListHeadshotJohn,
     {
       title: '<h6 class="popover_title">Top Procedures</h6>',
-      offset: [-100, -100],
       content: htmlJohn,
       html: true,
       animation: false,
@@ -496,7 +493,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popoverTriggerListHeadshotAseem,
     {
       title: '<h6 class="popover_title">Top Procedures</h6>',
-      offset: [-100, -100],
       content: htmlAseem,
       html: true,
       animation: false,
