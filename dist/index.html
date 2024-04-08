@@ -54,6 +54,39 @@
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- google apis -->
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <script>
+        function start() {
+            // 2. Initialize the JavaScript client library.
+            gapi.client
+                .init({
+                    apiKey: "AIzaSyBFuZwRLf107LcJkWeSKZ5FB6_Xf8sCzsM",
+                    // clientId and scope are optional if auth is not required.
+                    clientId:
+                        "982460484833-1orsdb6lldgfef8j0coltl5g90bg0ieo.apps.googleusercontent.com",
+                    scope: "profile",
+                })
+                .then(function () {
+                    // 3. Initialize and make the API request.
+                    return gapi.client.request({
+                        path: "https://people.googleapis.com/v1/people/me?requestMask.includeField=person.names",
+                    });
+                })
+                .then(
+                    function (response) {
+                        console.log(response.result);
+                    },
+                    function (reason) {
+                        console.log("Error: " + reason.error.message);
+                    }
+                );
+        }
+        // 1. Load the JavaScript client library.
+        gapi.load("client", start);
+    </script>
+
     <!-- My CSS style Sheet-->
     <link rel="stylesheet" href="/css/style.css">
 
@@ -997,6 +1030,7 @@
         </script>
 
     <!--My Script File-->
+    <script src="/script/googleReview.js"></script>
     <script src="/script/script.js"></script>
 
 
