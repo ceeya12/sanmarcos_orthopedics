@@ -111,10 +111,11 @@ nav i {
   margin-left: 20%;
 }
 
-//////////////////////////////////////////////
-/// navbar hover styling over services
-/// Implemented over the li items to provide another view box for Surgeons qualified to work on the specific service
-///
+@media screen and (max-width: 400px) {
+  .mobile_dropdown_adjust {
+    font-size: small;
+  }
+}
 
 /////////////////////////////////////////////////////////////////
 /* Search Implementation modal window appears as user inputs seach criteria*/
