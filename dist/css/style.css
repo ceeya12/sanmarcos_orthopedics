@@ -11939,6 +11939,11 @@ nav i {
   margin-left: 20%;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile_dropdown_adjust {
+    font-size: small;
+  }
+}
 /* Search Implementation modal window appears as user inputs seach criteria*/
 .close-modal {
   position: absolute;
