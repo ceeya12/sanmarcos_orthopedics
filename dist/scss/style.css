@@ -3388,8 +3388,8 @@ textarea.form-control-lg {
   --bs-dropdown-bg: var(--bs-body-bg);
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: 1px;
-  --bs-dropdown-border-width: 0.5;
-  --bs-dropdown-inner-border-radius: calc(1px - 0.5);
+  --bs-dropdown-border-width: 0.5px;
+  --bs-dropdown-inner-border-radius: calc(1px - 0.5px);
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-divider-margin-y: 0;
   --bs-dropdown-box-shadow: var(--bs-box-shadow);
@@ -12010,6 +12010,11 @@ nav i {
   font-size: 1.25rem;
 }
 
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 400px) {
   .icon_nav_center {
     display: flex;
@@ -12055,6 +12060,11 @@ nav i {
   margin-left: 20%;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile_dropdown_adjust {
+    font-size: small;
+  }
+}
 /* Search Implementation modal window appears as user inputs seach criteria*/
 .close-modal {
   position: absolute;
@@ -12231,6 +12241,10 @@ nav i {
   transition: opacity 350ms;
 }
 
+.honeycomb-cell a {
+  text-decoration: none;
+}
+
 .honeycomb-cell_title > small, .honeycomb-cell_title > .small {
   font-weight: 300;
   margin-top: 0.25em;
@@ -12279,7 +12293,7 @@ nav i {
 
 .honeycomb-cell:hover::after {
   color: white;
-  background-color: #fff;
+  background-color: #2e4c6f;
 }
 
 .honeycomb_Hidden {
@@ -12290,12 +12304,34 @@ nav i {
 }
 
 /****** Responsive *******/
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
+  .honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+    padding: 0;
+    transform: translateY(50px);
+    transform: translateX(68px);
+  }
   .honeycomb-cell {
-    margin: 81.25px 25px;
+    margin: 20px 20px 90px 20px;
   }
 }
-@media (min-width: 550px) and (max-width: 825px) {
+@media screen and (min-width: 550px) and (max-width: 825px) {
+  .honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 85px;
+    padding: 0;
+    transform: translateY(100px);
+  }
   .honeycomb-cell:nth-child(3n) {
     margin-right: calc(50% - 125px);
     margin-left: calc(50% - 125px);
@@ -12304,7 +12340,33 @@ nav i {
     display: block;
   }
 }
-@media (min-width: 825px) and (max-width: 1100px) {
+@media screen and (max-width: 985px) {
+  .honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+    padding: 0;
+    transform: translateY(50px);
+    transform: translateX(68px);
+  }
+  .honeycomb-cell {
+    margin: 20px 20px 90px 40px;
+  }
+}
+@media (min-width: 825px) and (max-width: 1300px) {
+  .honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+    padding: 0;
+    transform: translateY(50px);
+  }
   .honeycomb-cell:nth-child(5n+4) {
     margin-left: calc(50% - 275px);
   }
@@ -12316,7 +12378,7 @@ nav i {
     display: block;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   .honeycomb-cell:nth-child(7n+5) {
     margin-left: calc(50% - 400px);
   }
@@ -12428,14 +12490,6 @@ h1, .h1 {
 .profile_btn_decor:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
-
-.hover-element {
-  transition: border-color 0.5s step-start;
-}
-
-.hover-element img {
-  transition: transform 250ms ease-in-out;
 }
 
 .hover-element:hover {
@@ -12725,6 +12779,24 @@ ul {
 
 .facebook-bg {
   background: #3b5998;
+}
+
+.instagram-bg {
+  background: #2c4762;
+}
+
+.ctn-decoration-sm {
+  text-decoration: none;
+}
+
+.fa-square-instagram {
+  color: black;
+  font-size: 52px;
+  margin-left: 10px;
+}
+
+.fa-instagram {
+  background-color: #000;
 }
 
 .footer-widget-heading h3, .footer-widget-heading .h3 {
@@ -15869,24 +15941,30 @@ tr:nth-child(odd) {
   margin-bottom: 30px;
 }
 
+.insurance_container_table {
+  min-height: 500px;
+  background-color: #3f5e82;
+  border-top: 30px solid darkgrey;
+  border-bottom: 30px solid darkgrey;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.insurance_container_table p {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  padding: 0 50px 0 50px;
+}
+
+.insurance--info--spacing span {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 500px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .insurance_table {
-    margin-top: 200px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .insurance_table {
-    margin-bottom: 200px;
+  .col--spacing-mobile {
+    margin: 0 15% 0 15%;
   }
 }
 .container_patient_request {
@@ -15980,8 +16058,7 @@ tr:nth-child(odd) {
   font-size: x-large;
   text-align: left;
   margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 40px;
   font-weight: 700;
 }
 
